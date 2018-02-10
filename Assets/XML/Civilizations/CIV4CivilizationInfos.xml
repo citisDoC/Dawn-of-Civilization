@@ -1373,7 +1373,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_PESEDJET</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Pesedjet.dds</PaganReligionButton>
 			<Identifier>EGY</Identifier>
-			<StartingYear>-3000</StartingYear>
+			<StartingYear>-3150</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1477,6 +1477,10 @@
 				</Leader>
 				<Leader>
 					<LeaderName>LEADER_BAIBARS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_MUHAMMAD_ALI_PASHA</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 				<Leader>

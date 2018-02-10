@@ -123,15 +123,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_EGYPT_PTOLEMAIC</Tag>
-		<English>Ptolemaic Empire</English>
-		<French>
-			<Text>Empire lagide</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ptolemaic Empire</German>
-		<Italian>Ptolemaic Empire</Italian>
-		<Spanish>Ptolemaic Empire</Spanish>
+		<English>Ptolemaic</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_EGYPT_OLD_KINGDOM</Tag>
@@ -288,5 +280,17 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LOWER_EGYPT_SHORT_DESC</Tag>
+		<English>Lower Egypt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UPPER_EGYPT_SHORT_DESC</Tag>
+		<English>Upper Egypt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_UNITED_ARAB_ADJECTIVE</Tag>
+		<English>United Arab</English>
 	</TEXT>
 </Civ4GameText>

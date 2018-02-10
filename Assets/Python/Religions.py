@@ -244,7 +244,7 @@ class Religions:
 	def checkJudaism(self, iGameTurn):
 		if gc.getGame().isReligionFounded(iJudaism): return
 
-		if iGameTurn == getTurnForYear(-1500) - utils.getTurns(data.iSeed % 5):
+		if iGameTurn == getTurnForYear(-170) - utils.getTurns(data.iSeed % 5):
 			self.foundReligion(self.selectHolyCity(tJewishTL, tJewishBR, tJerusalem), iJudaism)
 			
 	def spreadJudaismEurope(self, iGameTurn):

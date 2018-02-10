@@ -534,4 +534,8 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GREATER_EMPIRE_OF</Tag>
+		<English>Greater Empire of %s1</English>
+	</TEXT>
 </Civ4GameText>

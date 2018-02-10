@@ -26158,7 +26158,7 @@ BeginPlot
 	x=68,y=33
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_STONE
+	BonusType=BONUS_MARBLE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -26175,6 +26175,7 @@ BeginPlot
 	x=68,y=35
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_STONE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -26560,12 +26561,6 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_MILITIA, UnitOwner=0, (Egypt)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER, UnitOwner=0, (Egypt)
-	EndUnit
 EndPlot
 BeginPlot
 	x=69,y=34
@@ -26575,7 +26570,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=35
-	BonusType=BONUS_MARBLE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -29638,7 +29632,7 @@ BeginPlot
 	x=77,y=39
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_MARBLE
+	BonusType=BONUS_STONE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -29647,7 +29641,7 @@ BeginPlot
 	x=77,y=40
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_STONE
+	BonusType=BONUS_MARBLE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2

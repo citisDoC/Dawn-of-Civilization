@@ -16,20 +16,29 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-(-3000, (73, 38), iIndependent, 'Yerushalayim', 2, iArcher, 3),	# Jerusalem
-(-3000, (79, 40), iIndependent2, 'Shushan', 1, iArcher, 1), 	# Susa
+(-4000, (77, 42), iIndependent, 'Ninua', 3, iVulture, 3), 	# Assyrian Empire, earlier spawn to avoid flip
+(-4000, (77, 38), iIndependent, 'Uruk', 3, iArcher, 2), 	# Sumerians
+(-4000, (102, 44), iIndependent, 'Luoyang', 1, -1, -1), 	# Neolithic China
+(-3200, (69, 33), iIndependent2, 'Niwt-Rst', 1, iMilitia, 1), 	# Thebes
+(-2700, (79, 40), iIndependent2, 'Shushan', 1, iArcher, 1), 	# Susa
+(-2000, (69, 39), iIndependent2, 'Knossos', 3, -1, -1),	        # Knossos
 (-2000, (85, 47), iIndependent, 'Afrasiyab', 1, iArcher, 1), 	# Samarkand
 #(-2000, (92, 39), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
 (-1600, (90, 40), iIndependent, 'Indraprastha', 1, iMilitia, 1),	# Delhi
+(-1600, (72, 44), iBarbarian, 'Ankuwash', 2, iHuluganni, 2),	# Ankara
+(-1500, (73, 38), iIndependent, 'Yerushalayim', 3, iMilitia, 2),	# Jerusalem
+(-1100, (104, 45), iIndependent, 'Zou', 2, -1, -1), 	# Qufu
 (-1000, (102, 47), iIndependent, 'Zhongdu', 2, iSpearman, 1),	# Beijing
-(-1000, (72, 44), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
+(-800, (69, 30), iIndependent2, 'Mero&#235;', 3, iArcher, 1), 	# Meroe
 (-760, (59, 47), iCeltia, 'Melpum', 2, iArcher, 2),			# Milan
 (-350, (56, 47), iCeltia, 'Lugodunon', 2, -1, -1),			# Lyon
 (-325, (92, 33), iIndependent, 'Kanchipuram', 2, iArcher, 1),	# Madras
 (-300, (105, 49), iBarbarian, 'Simiyan hoton', 2, iChariot, 2),	# Shenyang
 (-300, (53, 48), iCeltia, 'Burdigala', 2, -1, -1),			# Bordeaux
 (-300, (91, 31), iIndependent, 'Tanjapuri', 1, iWarElephant, 1),	# Thanjavur
+(-257, (101, 37), iIndependent2, 'Co Loa', 2, iWarElephant, 1), 	# Hanoi
 (-250, (19, 35), iNative, 'Danibaan', 2, iHolkan, 1),	# Monte Albán
+(-214, (105, 39), iIndependent2, 'Panyu', 2, iAxeman, 2), 	# Guangzhou
 (-190, (77, 44), iIndependent2, 'Artashat', 1, -1, -1),			# Artaxata
 (-100, (95, 47), iBarbarian, 'Dunhuang', 2, iArcher, 1),		# Dunhuang
 (100, (18, 37), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
@@ -43,7 +52,7 @@ tMinorCities = (
 (700, (30, 20), iNative, 'Tiwanaku', 1, -1, -1),			# Tihuanaco
 (800, tVienna, iIndependent, 'Vindobona', 1, iCrossbowman, 1),	# Wien
 (830, (59, 54), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
-(830, (60, 54), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lübeck
+(830, (60, 54), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lï¿½beck
 (866, (101, 37), iBarbarian, 'Hanoi', 2, -1, -1),			# Hanoi
 (880, (65, 48), iIndependent2, 'Buda', 3, iHorseArcher, 5),		# Budapest
 (900, (24, 26), iNative, 'Tucume', 1, iArcher, 2),			# Tucume
@@ -95,7 +104,7 @@ class Barbs:
 						iUnit = utils.getRandomEntry(lUnitList)
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
-		if utils.isYearIn(-3000, -850):
+		if utils.isYearIn(-4000, -850):
 			if iHandicap >= 0:
 				self.checkSpawn(iBarbarian, iWarrior, 1, (76, 46), (99, 53), self.spawnMinors, iGameTurn, 5, 0)
 			
@@ -181,8 +190,8 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iHeavyGalley, 1, (72, 20), (91, 36), self.spawnPirates, iGameTurn, 10, 0)
 
 		# Leoreth: Barbarians in Anatolia (Hittites), replace Hattusas spawn
-		if utils.isYearIn(-2000, -800):
-			self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (68, 42), (74, 45), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
+		#if utils.isYearIn(-2000, -800):
+		#	self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (68, 42), (74, 45), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
 
 		#barbarians in europe
 		if utils.isYearIn(-210, 470):
@@ -335,12 +344,28 @@ class Barbs:
 			if not self.canFoundCity(sName): continue
 			
 			lReligions = []
-			bForceSpawn = False
+			bForceSpawn = True
 			
 			if sName == 'Kyiv': lReligions = [iOrthodoxy]
 			if iPlayer == iCeltia and utils.getScenario() != i3000BC: iPlayer = iIndependent
 			if sName == 'Buda': bForceSpawn = True
 			if sName == 'Muqdisho': lReligions = [iIslam]
+
+                        # Egypt area
+                        if sName in ['Niwt-Rst', 'Mero&#235;']:
+				lBuildings = [iObelisk, iPaganTemple, iGranary]
+			if sName in ['Yerushalayim']:
+				lBuildings = [iPaganTemple, iLibrary]
+                        
+                        # Babylon area
+                        if sName == 'Ninua' or sName == 'Ankuwash' or sName == 'Pratisthan':
+				lBuildings = [iPaganTemple, iBarracks, iMonument]
+                        if sName in ['Uruk']:
+				lBuildings = [iGranary, iSmokehouse, iPaganTemple]
+                        
+			if sName == 'Zou' or sName == 'Zhongdu' or sName == 'Fenghao' or sName == 'Yuecheng':
+				lBuildings = [iLibrary, iPaganTemple]
+				bForceSpawn = True
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
 			

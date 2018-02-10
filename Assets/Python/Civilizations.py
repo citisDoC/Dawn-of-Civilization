@@ -144,8 +144,8 @@ def init():
 lStartingTechs = [
 {
 iCivNative : 	Techs([iTanning, iMythology]),
-iCivEgypt :	Techs([iMining, iPottery, iAgriculture]),
-iCivBabylonia :	Techs([iPottery, iPastoralism, iAgriculture]),
+iCivEgypt :	Techs([], column=1),
+iCivBabylonia :	Techs([iAgriculture]),
 iCivHarappa : 	Techs([iMining, iPottery, iAgriculture]),
 iCivChina :	Techs([iTanning, iMining, iAgriculture, iPastoralism, iPottery, iMythology, iSmelting, iLeverage]),
 iCivIndia :	Techs([iAlloys, iWriting, iCalendar], column=2, exceptions=[iSeafaring]),

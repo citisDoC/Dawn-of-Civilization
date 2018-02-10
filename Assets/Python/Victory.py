@@ -210,7 +210,7 @@ dTechGoals = {
 dEraGoals = {}
 
 dWonderGoals = {
-	iEgypt: (1, [iPyramids, iGreatLibrary, iGreatLighthouse], True),
+	iEgypt: (1, [iGreatSphinx, iPyramids, iGreatLibrary, iGreatLighthouse], True),
 	iGreece: (2, [iColossus, iParthenon, iStatueOfZeus, iTempleOfArtemis], True),
 	iCarthage: (0, [iGreatCothon], False),
 	iPolynesia: (2, [iMoaiStatues], True),
@@ -286,7 +286,7 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iEgypt, 0)
 				
 		# first goal: build the Pyramids, the Great Lighthouse and the Great Library by 100 BC
-		if iGameTurn == getTurnForYear(-100):
+		if iGameTurn == getTurnForYear(-30):
 			expire(iEgypt, 1)
 				
 		# third goal: have 5000 culture in 170 AD
@@ -307,8 +307,8 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iBabylonia, 1)
 			
-		# third goal: make Babylon the most cultured city in the world in 700 BC
-		if iGameTurn == getTurnForYear(-700):
+		# third goal: make Babylon the most cultured city in the world in 550 BC
+		if iGameTurn == getTurnForYear(-550):
 			if isBestCity(iBabylonia, (76, 40), cityCulture):
 				win(iBabylonia, 2)
 			else:
@@ -3449,10 +3449,11 @@ def getUHVHelp(iPlayer, iGoal):
 			iCulture = pEgypt.countTotalCulture()
 			aHelp.append(getIcon(iCulture >= utils.getTurns(500)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(500))))
 		elif iGoal == 1:
-			bPyramids = data.getWonderBuilder(iPyramids) == iEgypt
+			bSphinx = data.getWonderBuilder(iGreatSphinx) == iEgypt
+                        bPyramids = data.getWonderBuilder(iPyramids) == iEgypt
 			bLibrary = data.getWonderBuilder(iGreatLibrary) == iEgypt
 			bLighthouse = data.getWonderBuilder(iGreatLighthouse) == iEgypt
-			aHelp.append(getIcon(bPyramids) + localText.getText("TXT_KEY_BUILDING_PYRAMIDS", ()) + getIcon(bLibrary) + localText.getText("TXT_KEY_BUILDING_GREAT_LIBRARY", ()) + getIcon(bLighthouse) + localText.getText("TXT_KEY_BUILDING_GREAT_LIGHTHOUSE", ()))
+			aHelp.append(getIcon(bSphinx) + localText.getText("TXT_KEY_BUILDING_GREAT_SPHINX", ()) + getIcon(bPyramids) + localText.getText("TXT_KEY_BUILDING_PYRAMIDS", ()) + getIcon(bLibrary) + localText.getText("TXT_KEY_BUILDING_GREAT_LIBRARY", ()) + getIcon(bLighthouse) + localText.getText("TXT_KEY_BUILDING_GREAT_LIGHTHOUSE", ()))
 		elif iGoal == 2:
 			iCulture = pEgypt.countTotalCulture()
 			aHelp.append(getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(5000))))

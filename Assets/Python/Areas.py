@@ -68,8 +68,9 @@ def getRebirthArea(iPlayer):
 	if iPlayer in dRebirthArea: return getArea(iPlayer, dRebirthArea, dRebirthAreaExceptions)
 	return getBirthArea(iPlayer)
 	
-def updateCore(iPlayer):
-	lCore = getCoreArea(iPlayer)
+def updateCore(iPlayer, lCore = []):
+        if len(lCore) == 0:
+                lCore = getCoreArea(iPlayer)
 	for x in range(iWorldX):
 		for y in range(iWorldY):
 			plot = gc.getMap().plot(x, y)
@@ -100,7 +101,7 @@ def init():
 ### Capitals ###
 
 tCapitals = (
-(69, 33), # Thebes
+(69, 35), # Memphis
 (76, 40), # Babylon
 (87, 40), # Harappa
 (100, 44), # Chang'an
@@ -279,7 +280,7 @@ iCanada : [(20, 50), (21, 50), (22, 50), (23, 50), (24, 50), (25, 50), (29, 50),
 
 tCoreArea = (
 ((67, 32),	(69, 36)),	# Egypt
-((75, 39),	(77, 42)),	# Babylonia
+((76, 38),	(78, 40)),	# Babylonia
 ((85, 37),	(88, 41)),	# Harappa
 ((99, 43),	(107, 47)),	# China
 ((64, 39),	(70, 45)),	# Greece

@@ -670,10 +670,10 @@ def onRevolution(iPlayer):
 	checkShortAdjectiveCapitalLeaderCore(iPlayer)
 	
 def onCityAcquired(iPreviousOwner, iNewOwner):
+        checkShortAdjectiveCapitalLeaderCore(iPreviousOwner)
+	checkShortAdjectiveCapitalLeaderCore(iNewOwner)
 	checkName(iPreviousOwner)
 	checkName(iNewOwner)
-	checkShortAdjectiveCapitalLeaderCore(iPreviousOwner)
-	checkShortAdjectiveCapitalLeaderCore(iNewOwner)
 	
 def onCityRazed(iOwner):
 	checkName(iOwner)
@@ -813,7 +813,7 @@ def text(sTextKey, tInput=()):
 	
 def desc(iPlayer, sTextKey=str("%s1")):
 	if isVassal(iPlayer): return text(sTextKey, (name(iPlayer), adjective(iPlayer), name(iPlayer, True), adjective(iPlayer, True)))
-
+        
 	return text(sTextKey, (name(iPlayer), adjective(iPlayer)))
 
 def short(iPlayer):
@@ -1606,7 +1606,6 @@ def title(iPlayer):
 	polityTitle = getPolityTitle(iPlayer)
 	if polityTitle:
 		return polityTitle
-	
 	if isCommunist(iPlayer):
 		sCommunistTitle = communistTitle(iPlayer)
 		if sCommunistTitle: return sCommunistTitle
@@ -1731,8 +1730,14 @@ def monarchyTitle(iPlayer):
 		case = "ADJECTIVE"
 	
 	tPolity = getPolity(iPlayer)
-	if tPolity and not getPolityTitleAdjective(tPolity):
-		case = "OF"
+        if tPolity:
+                if not getPolityTitleAdjective(tPolity):
+                        case = "OF"
+                if tPolity[iFieldNameType] in [iTypeDynastic]:
+                        case = "ADJECTIVE"
+                        type = "EMPIRE"
+                elif tPolity[iFieldNameType] in [iTypeCapital]:
+                        case = "OF"
 		
 	return "TXT_KEY_" + type + "_" + case
 
@@ -1917,29 +1922,8 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	iGameEra = gc.getGame().getCurrentEra()
 	bWar = isAtWar(iPlayer)
 	bMonarchy = not (isCommunist(iPlayer) or isFascist(iPlayer) or isRepublic(iPlayer))
-
-	if iPlayer == iEgypt:
-		if bResurrected or utils.getScenario() >= i600AD:
-			if iReligion == iIslam:
-				if bTheocracy: return "TXT_KEY_CALIPHATE_ADJECTIVE"
-				return "TXT_KEY_SULTANATE_ADJECTIVE"
-			return "TXT_KEY_KINGDOM_ADJECTIVE"
 			
-		if iGreece in lPreviousOwners:
-			return "TXT_KEY_CIV_EGYPT_PTOLEMAIC"
-			
-		if bCityStates:
-			return "TXT_KEY_CITY_STATES_ADJECTIVE"
-				
-		if iEra == iAncient:
-			if iAnarchyTurns == 0: return "TXT_KEY_CIV_EGYPT_OLD_KINGDOM"
-			if iAnarchyTurns == utils.getTurns(1): return "TXT_KEY_CIV_EGYPT_MIDDLE_KINGDOM"
-			return "TXT_KEY_CIV_EGYPT_NEW_KINGDOM"
-		
-		if iEra == iClassical:
-			return "TXT_KEY_CIV_EGYPT_NEW_KINGDOM"
-			
-	elif iPlayer == iIndia:
+	if iPlayer == iIndia:
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_OF"
 			
@@ -2371,11 +2355,7 @@ def leader(iPlayer):
 	iGameEra = gc.getGame().getCurrentEra()
 	
 	if iPlayer == iEgypt:
-		if not bMonarchy and iEra >= iGlobal: return iNasser
-		
-		if bResurrected or utils.getScenario() >= i600AD: return iBaibars
-		
-		if getColumn(iPlayer) >= 4: return iCleopatra
+		if not bMonarchy and iEra >= iIndustrial: return iMuhammadAliPasha
 		
 	elif iPlayer == iIndia:
 		if not bMonarchy and iEra >= iGlobal: return iGandhi
@@ -2653,6 +2633,34 @@ def getPolity(iPlayer):
 	bWar = isAtWar(iPlayer)
 	bCityState = (iNumCities == 1)
 	
+	if iPlayer == iEgypt:
+                if iEra == iAncient:
+                        if iNumCities < 2:
+                                return dPolities[iPolityLowerEgypt]
+                        else:
+                                return dPolities[iPolityEgypt]
+		if iEra == iClassical:
+			return dPolities[iPolityPtolemy]
+		if iEra == iMedieval:
+			return dPolities[iPolityFatimids]
+                if iEra == iRenaissance:
+                        return dPolities[iPolityMamluks]
+                if iEra > iRenaissance:
+                        if bEmpire and iEra > iIndustrial:
+                                return dPolities[iPolityUnitedArabRepublic]
+                        return dPolities[iPolityEgypt]
+                        
+        if iPlayer == iBabylonia:
+                x, y = tCapitalCoords
+                
+                if iEra <= iMedieval:
+                        x, y = tCapitalCoords
+                        if y < 41:
+                                return dPolities[iPolityAkkadia]
+                        else:
+                                return dPolities[iPolityAssyria]
+                return dPolities[iPolityIraq]
+
 	if iPlayer == iFrance:
 		if iGameTurn < getTurnForYear(tBirth[iEngland]):
 			return dPolities[iPolityFrancia]
@@ -2830,6 +2838,12 @@ def getPolityLeader(iPlayer):
 		
 	polity = getPolity(iPlayer)
 	if polity:
+                if polity == iPolityEgypt:
+                        if iEra >= iGlobal: return iNasser
+                        if iEra >= iRenaissance: return iMuhammadAliPasha
+                if polity == iPolityAkkadia:
+                        if iEra == iAncient: return iSargon
+                        return iHammurabi
 		if polity == iPolityFrance:
 			if iEra >= iGlobal: return iDeGaulle
 			if iEra >= iIndustrial: return iNapoleon

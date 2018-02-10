@@ -8406,6 +8406,9 @@
 			<MovieDefineTag>ART_DEF_MOVIE_PYRAMIDS</MovieDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<PrereqBonuses>
+				<Bonus>BONUS_STONE</Bonus>
+			</PrereqBonuses>
 			<ObsoleteTech>TECH_ARCHITECTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8439,7 +8442,7 @@
 			<ConstructSound>AS2D_BUILD_PYRAMID</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
-					<BonusType>BONUS_STONE</BonusType>
+					<BonusType>BONUS_MARBLE</BonusType>
 					<iProductonModifier>100</iProductonModifier>
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
@@ -8461,6 +8464,9 @@
 			<MovieDefineTag>ART_DEF_MOVIE_ORACLE</MovieDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
+			<PrereqBonuses>
+				<Bonus>BONUS_FISH</Bonus>
+			</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9201,6 +9207,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_GREAT_LIGHTHOUSE</MovieDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<PrereqBonuses>BONUS_MARBLE</PrereqBonuses>
 			<ObsoleteTech>TECH_COMPASS</ObsoleteTech>
 			<FreeBuilding>BUILDINGCLASS_LIGHTHOUSE</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
@@ -9233,6 +9240,12 @@
 				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
 			</CommerceChangeOriginalOwners>
 			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -9576,8 +9589,9 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GREAT_LIBRARY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_GREAT_LIBRARY</MovieDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
-			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<PrereqTech>TECH_LITERATURE</PrereqTech>
 			<ObsoleteTech>TECH_PAPER</ObsoleteTech>
+			<bWater>1</bWater>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -13172,6 +13186,7 @@
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
+			<bWater>1</bWater>
 			<bNukeImmune>1</bNukeImmune>
 			<bWater>1</bWater>
 			<iCoastalTradeRoutes>1</iCoastalTradeRoutes>

@@ -260,14 +260,14 @@ class RiseAndFall:
 		self.initScenario()
 		
 		# Leoreth: make sure to select the Egyptian settler
-		if pEgypt.isHuman():
-			x, y = Areas.getCapital(iEgypt)
-			plotEgypt = gc.getMap().plot(x, y)  
-			for i in range(plotEgypt.getNumUnits()):
-				unit = plotEgypt.getUnit(i)
-				if unit.getUnitType() == iSettler:
-					CyInterface().selectUnit(unit, True, False, False)
-					break
+		#if pEgypt.isHuman():
+		#	x, y = Areas.getCapital(iEgypt)
+		#	plotEgypt = gc.getMap().plot(x, y)  
+		#	for i in range(plotEgypt.getNumUnits()):
+		#		unit = plotEgypt.getUnit(i)
+		#		if unit.getUnitType() == iSettler:
+		#			CyInterface().selectUnit(unit, True, False, False)
+		#			break
 					
 	def initScenario(self):
 		self.updateStartingPlots()
@@ -705,7 +705,7 @@ class RiseAndFall:
 
 	def setupBirthTurnModifiers(self):
 		for iCiv in range(iNumPlayers):
-			if tBirth[iCiv] > -3000 and not gc.getPlayer(iCiv).isHuman():
+			if tBirth[iCiv] > -4000 and not gc.getPlayer(iCiv).isHuman():
 				data.players[iCiv].iBirthTurnModifier = gc.getGame().getSorenRandNum(11, "BirthTurnModifier") - 5 # -5 to +5
 		#now make sure that no civs spawn in the same turn and cause a double "new civ" popup
 		for iCiv in range(utils.getHumanID()+1, iNumPlayers):
@@ -2450,7 +2450,10 @@ class RiseAndFall:
 
 
 	def createStartingUnits(self, iCiv, tPlot):
-		if iCiv == iChina:
+		if iCiv == iEgypt:
+			utils.createSettlers(iCiv, 1)
+                        utils.makeUnit(iMilitia, iCiv, tPlot, 1)
+                elif iCiv == iChina:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArcher, iCiv, tPlot, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
@@ -3086,8 +3089,7 @@ class RiseAndFall:
 			tCapital = Areas.getCapital(iPlayer)
 			
 			if tBirth[iPlayer] > utils.getScenarioStartYear() and gc.getPlayer(iPlayer).isHuman():
-				utils.makeUnit(iSettler, iPlayer, tCapital, 1)
-				utils.makeUnit(iMilitia, iPlayer, tCapital, 1)
+				utils.makeUnit(iCatapult, iPlayer, (0, 0), 1)
 				
 			if iPlayer == iHarappa and (data.isPlayerEnabled(iPlayer) or gc.getPlayer(iPlayer).isHuman()):
 				utils.makeUnit(iCityBuilder, iPlayer, tCapital, 1)

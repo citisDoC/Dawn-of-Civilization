@@ -245,4 +245,16 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_AKKADIAN</Tag>
+		<English>Akkadian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_IRAQ</Tag>
+		<English>Iraq</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_IRAQI</Tag>
+		<English>Iraqi</English>
+	</TEXT>
 </Civ4GameText>

@@ -395,8 +395,9 @@ class UniquePowers:
                                 for iTradeRoute in range(sourceCity.getTradeRoutes()):
                                         tradeCity = sourceCity.getTradeCity(iTradeRoute)
                                         if (tradeCity.getNameKey() in dHappyCities):
-                                                lCandidateCities.append(dHappyCities[tradeCity.getNameKey()])
-                                if (lCandidateCities):
+                                                if (tradeCity.getPopulation() > sourceCity.getPopulation()):
+                                                        lCandidateCities.append(dHappyCities[tradeCity.getNameKey()])
+                                if (len(lCandidateCities) > 0):
                                         lCandidateCities.sort(key=itemgetter(1), reverse=True)
                                         (targetCity, _) = lCandidateCities[0]
                                         dHappyCities.pop(targetCity.getNameKey())
@@ -434,7 +435,7 @@ class UniquePowers:
                                                                 targetCity.setHasReligion(iReligion, True, True, True)
                                                         
                                         # brain drain
-                                        iBrainDrain = math.floor(self.brainDrain(sourceCity, targetCity) / 10) + 1
+                                        iBrainDrain = int(math.floor(self.brainDrain(sourceCity, targetCity) / 10) + 1)
 
                                         sourceCity.changePopulation(-1)
                                         targetCity.changePopulation(1)
@@ -450,10 +451,10 @@ class UniquePowers:
                 lProgress = []
                 for iSpecialist in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]:
                         iProgress = sourceCity.getGreatPeopleUnitProgress(utils.getUniqueUnit(sourceCity.getOwner(), iSpecialist))
-                        if iAllProgress > iProgress:
+                        if iProgress > iAllProgress:
                                 lProgress.append(iSpecialist)
                 
-                if not lProgress: return 0
+                if len(lProgress) == 0: return 0
                 
                 iGreatPerson = utils.getRandomEntry(lProgress)
                 sourceCity.changeGreatPeopleProgress(-iAllProgress)
@@ -464,7 +465,7 @@ class UniquePowers:
                 city.changeGreatPeopleUnitProgress(iGreatPerson, iAllProgress)
                                 
                 if utils.getHumanID() == city.getOwner():
-                        CyInterface().addMessage(city.getOwner(), False, iDuration, CyTranslator().getText("TXT_KEY_UP_MULTICULTURALISM", (city.getName(), gc.getUnitInfo(iGreatPerson).getText(), iPopulation)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iGreatPerson).getButton(), ColorTypes(iGreen), city.getX(), city.getY(), True, True)
+                        CyInterface().addMessage(city.getOwner(), False, iDuration, CyTranslator().getText("TXT_KEY_UP_MULTICULTURALISM", (city.getName(), gc.getUnitInfo(iGreatPerson).getText(), 1)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iGreatPerson).getButton(), ColorTypes(iGreen), city.getX(), city.getY(), True, True)
                 
                 return iAllProgress
 					

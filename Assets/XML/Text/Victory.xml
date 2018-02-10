@@ -283,11 +283,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BAB3</Tag>
-		<English>Make Babylon the most culturally advanced city in the world in 700 BC</English>
-		<French>Faire de Babylone la ville la plus avanc&#233;e culturellement en 700 av. J.-C.</French>
-		<German>Machen Sie Babylon im Jahr 700 v. Chr. zur kulturell bedeutendsten Stadt</German>
-		<Italian>Rendi Babilonia la citt&#224; culturalmente pi&#249; avanzata del mondo entro il 700 a.C.</Italian>
-		<Spanish>Conseguir que Babilonia sea la ciudad m&#225;s adelantada del mundo en t&#233;rminos de cultura en el 700 a. C.</Spanish>
+		<English>Make Babylon the most culturally advanced city in the world in 550 BC</English>
+		<French>Faire de Babylone la ville la plus avanc&#233;e culturellement en 550 av. J.-C.</French>
+		<German>Machen Sie Babylon im Jahr 550 v. Chr. zur kulturell bedeutendsten Stadt</German>
+		<Italian>Rendi Babilonia la citt&#224; culturalmente pi&#249; avanzata del mondo entro il 550 a.C.</Italian>
+		<Spanish>Conseguir que Babilonia sea la ciudad m&#225;s adelantada del mundo en t&#233;rminos de cultura en el 550 a. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BAB3_EPIC</Tag>
@@ -739,11 +739,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_EGY2</Tag>
-		<English>Build the Pyramids, the Great Library, and the Great Lighthouse by 100 BC</English>
-		<French>Construire les Pyramides, la Grande Biblioth&#232;que et le Grand Phare avant 100 av. J.-C.</French>
-		<German>Bauen Sie bis zum Jahr 100 v. Chr. die Pyramiden, die Gro&#223;e Bibliothek und den Gro&#223;en Leuchtturm</German>
-		<Italian>Devi costruire le Piramidi, la Grande Biblioteca e il Grande Faro entro il 100 a.C.</Italian>
-		<Spanish>Construir las Pir&#225;mides, la Gran Biblioteca y el Gran Faro antes del 100 a. C.</Spanish>
+		<English>Build the Great Sphinx, the Pyramids, the Great Library, and the Great Lighthouse by 30 BC</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_EGY2_EPIC</Tag>

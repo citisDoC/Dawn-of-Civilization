@@ -247,9 +247,9 @@ lOlderNeighbours = [
 
 # converted to years - edead
 tBirth = (
--3000, # 0, #3000BC			# Egypt
--3000, # 0, #3000BC			# Babylonia
--3000,					# Harappa
+-3150, # 0, #3000BC			# Egypt
+-4000, # 0, #3000BC			# Babylonia
+-4000,					# Harappa
 -2070,					# China
 -1600, # 50, #1600BC			# Greece
 -1500, # 0, #3000BC			# India
@@ -292,12 +292,12 @@ tBirth = (
 1810,					# Argentina
 1822,					# Brazil
 1867,					# Canada
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000
+-4000, # 0,
+-4000, # 0,
+-4000, # 0,
+-4000, # 0,
+-4000, # 0,
+-4000
 )
 
 # Leoreth: stability penalty from this date on
@@ -414,7 +414,7 @@ iAztecs : iCivMexico,
 
 tResurrectionIntervals = (
 [(900, 1300), (1800, 2020)], #Egypt
-[(-3000, -500)], #Babylonia
+[(-1895, -500)], #Babylonia
 [],		# Harappa
 [(600, 2020)], #China
 [(1800, 2020)], #Greece
@@ -1043,7 +1043,7 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 127
+iNumLeaders = 128
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
@@ -1056,7 +1056,7 @@ iShahuji, iNaresuan, iAlpArslan, iBaibars, iNasser, iAlfred, iTrudeau, iChandrag
 iRahman, iRajendra, iLobsangGyatso, iSobieski, iVatavelli, iMbemba, iHarun, iSongtsen, iCasimir, iYaqub, 
 iLorenzo, iSantaAnna, iJuarez, iCardenas, iPedro, iSanMartin, iPeron, iBolivar, iAhoeitu, iKrishnaDevaRaya, 
 iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDonald, iCastilla, iWilliam,
-iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iPhilipAugustus, iAbdulaziz) = range(iNumLeaders)
+iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iMuhammadAliPasha, iPhilipAugustus, iAbdulaziz) = range(iNumLeaders)
 
 resurrectionLeaders = {
 	iChina : iHongwu,
@@ -1102,10 +1102,10 @@ lNetworkEvents = {
 
 
 # citis: polities
-iNumPolities = 180
-(iPolityOldEgypt, iPolityMiddleEgypt, iPolityNewEgypt, iPolityFatimids, iPolityMamluks, iPolityAyyubids, iPolityEgypt, #7
+iNumPolities = 177
+(iPolityLowerEgypt, iPolityEgypt, iPolityPtolemy, iPolityFatimids, iPolityMamluks, iPolityAyyubids, iPolityUnitedArabRepublic, #7
 iPolityZhou, iPolityQin, iPolityHan, iPolityJin, iPolityTang, iPolitySong, iPolityMing, iPolityQing, iPolityChina, #9
-iPolityAkkadia, iPolityAssyria, iPolityBabylonia, iPolityNeoAssyria, iPolityNeoBabylonia, iPolityIraq, #6
+iPolityAkkadia, iPolityAssyria, iPolityIraq, #6
 iPolityHVC, iPolityDelhi, iPolityMughals, iPolityPakistan, #4
 iPolityMyceneans, iPolityGreece, iPolityMacedonia, iPolityEasternRome, iPolityByzantium, iPolityNicaea, #6
 iPolityMagadha, iPolityNanda, iPolityMaurya, iPolityGupta, iPolityPala, iPolityMaratha, iPolityIndia, #7
@@ -1155,6 +1155,19 @@ iNumNameTypes = 6
 iNumPolityFields = 7
 (iFieldAdjective, iFieldName, iFieldTitle, iFieldNameType, iFieldCapitalLocation, iFieldLeader, iFieldCore) = range(iNumPolityFields)
 dPolities = {
+        #Egypt:
+        iPolityLowerEgypt: [-1, "TXT_KEY_CIV_LOWER_EGYPT_SHORT_DESC", -1, iTypeNationalShort, (69, 35), iRamesses, {"tRectangle" : ((68, 35), (70, 37)), 'lExceptions' : []}],
+        iPolityEgypt: [-1, "TXT_KEY_CIV_EGYPT_SHORT_DESC", -1, iTypeNationalAdjective, (69, 35), -1, {"tRectangle" : ((68, 33), (70, 36)), 'lExceptions' : []}],
+        iPolityPtolemy: ["TXT_KEY_CIV_EGYPT_PTOLEMAIC", -1, -1, iTypeDynastic, (67, 36), iCleopatra, {"tRectangle" : ((67, 35), (70, 36)), 'lExceptions' : []}],
+        iPolityFatimids: ["TXT_KEY_CIV_EGYPT_FATIMID", -1, -1, iTypeDynastic, (69, 35), iBaibars, {"tRectangle" : ((67, 35), (74, 38)), 'lExceptions' : []}],
+        iPolityMamluks: ["TXT_KEY_CIV_EGYPT_MAMLUK", -1, -1, iTypeDynastic, (69, 35), iBaibars, {"tRectangle" : ((67, 35), (74, 38)), 'lExceptions' : []}],
+        iPolityUnitedArabRepublic: ["TXT_KEY_CIV_EGYPT_UNITED_ARAB_ADJECTIVE", -1, -1, iTypeNationalAdjective, (69, 35), iNasser, {"tRectangle" : ((67, 35), (74, 38)), 'lExceptions' : []}],
+        
+        #Babylonia:
+        iPolityAkkadia: ["TXT_KEY_CIV_BABYLONIA_AKKADIAN", -1, -1, iTypeCapital, (76, 40), -1, {"tRectangle" : ((76, 38), (78, 40)), 'lExceptions' : []}],
+        iPolityAssyria: ["TXT_KEY_CIV_BABYLONIA_ASSYRIAN", -1, -1, iTypeCapital, (77, 42), -1, {"tRectangle" : ((75, 41), (78, 43)), 'lExceptions' : []}],
+        iPolityIraq: ["TXT_KEY_CIV_BABYLONIA_IRAQI", "TXT_KEY_CIV_BABYLONIA_IRAQ", -1, iTypeNationalShort, (76, 40), -1, {"tRectangle" : ((76, 39), (78, 42)), 'lExceptions' : []}],
+        
 	#France:
 	iPolityFrancia : ["TXT_KEY_CIV_FRANCE_FRANKISH", "TXT_KEY_CIV_FRANCE_FRANCIA", -1, iTypeNationalAdjective, -1, iCharlemagne, {"tRectangle" : ((55, 49), (59, 53)), 'lExceptions' : []}],
 	iPolityBurgundy : ["TXT_KEY_CIV_FRANCE_BURGUNDIAN", "TXT_KEY_CIV_FRANCE_BURGUNDY", -1, iTypeNational, (56, 47), -1, {'tRectangle' : ((55, 46), (57, 49)), 'lExceptions' : []}],
