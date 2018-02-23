@@ -497,7 +497,7 @@ dAdjectiveChanges = {
 
 dCapitals = {
 	iPolynesia : ["Kaua'i", "O'ahu", "Maui", "Manu'a", "Niue"],
-	iBabylonia : ["Ninua", "Kalhu"],
+	iBabylonia : ["Ninua", "Kalhu", "Akkad"],
 	iByzantium : ["Dyrrachion", "Athena", "Konstantinoupolis"],
 	iVikings : ["Stockholm", "Oslo", "Nidaros", "Kalmar", "Roskilde"],
 	iKhmer : ["Pagan", "Dali", "Angkor", "Hanoi"],
@@ -1016,6 +1016,8 @@ def specificName(iPlayer):
 	elif iPlayer == iBabylonia:
 		if isCapital(iPlayer, ["Ninua", "Kalhu"]):
 			return "TXT_KEY_CIV_BABYLONIA_ASSYRIA"
+		if gc.getPlayer(iPlayer).getCapitalCity().getName() == "Akkad":
+			return "TXT_KEY_CIV_BABYLONIA_AKKADIA"
 			
 	elif iPlayer == iGreece:
 		if not bCityStates and bEmpire and iEra <= iClassical:
@@ -1302,6 +1304,9 @@ def specificAdjective(iPlayer):
 			
 		if isCapital(iPlayer, ["Ninua", "Kalhu"]):
 			return "TXT_KEY_CIV_BABYLONIA_ASSYRIAN"
+		
+		if gc.getPlayer(iPlayer).getCapitalCity().getName() == "Akkad":
+			return "TXT_KEY_CIV_BABYLONIA_AKKADIAN"
 			
 	elif iPlayer == iGreece:
 		if not bCityStates and bEmpire and iEra <= iClassical:
