@@ -1051,19 +1051,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GRE2_TITLE</Tag>
-		<English>Alexander's Empire</English>
-		<French>Alexander's Empire</French>
-		<German>Alexanders Reich</German>
-		<Italian>Alexander's Empire</Italian>
-		<Spanish>Alexander's Empire</Spanish>
+		<English>Hellenic World</English>
+		<French>Hellenic World</French>
+		<German>Hellenic World</German>
+		<Italian>Hellenic World</Italian>
+		<Spanish>Hellenic World</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GRE2</Tag>
-		<English>Control Egypt, Phoenicia, Babylonia and Persia in 330 BC</English>
-		<French>Control Egypt, Phoenicia, Babylonia and Persia in 330 BC</French>
-		<German>Kontrollieren Sie im Jahr 330 v.Chr. &#196;gypten, Ph&#246;nizien, Babylonien und Persien</German>
-		<Italian>Control Egypt, Phoenicia, Babylonia and Persia in 330 BC</Italian>
-		<Spanish>Control Egypt, Phoenicia, Babylonia and Persia in 330 BC</Spanish>
+		<English>Colonize Emporion, South Italy, Black Sea and control Egypt, Phoenicia, Babylonia and Persia in 330 BC</English>
+		<French>Colonize Emporion, South Italy, Black Sea and control Egypt, Phoenicia, Babylonia and Persia in 330 BC</French>
+		<German>Colonize Emporion, South Italy, Black Sea and control Egypt, Phoenicia, Babylonia and Persia in 330 BC</German>
+		<Italian>Colonize Emporion, South Italy, Black Sea and control Egypt, Phoenicia, Babylonia and Persia in 330 BC</Italian>
+		<Spanish>Colonize Emporion, South Italy, Black Sea and control Egypt, Phoenicia, Babylonia and Persia in 330 BC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GRE2_EPIC</Tag>
@@ -5240,5 +5240,17 @@
 		<German>Culture in %s1: %d2 / %d3</German>
 		<Italian>Culture in %s1: %d2 / %d3</Italian>
 		<Spanish>Culture in %s1: %d2 / %d3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VICTORY_OCC_CAT</Tag>
+		<English>Emporion</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_SOUTH_ITALY</Tag>
+		<English>South Italy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BLACK_SEA</Tag>
+		<English>Black Sea</English>
 	</TEXT>
 </Civ4GameText>
