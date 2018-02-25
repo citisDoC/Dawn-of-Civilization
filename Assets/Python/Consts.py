@@ -252,12 +252,12 @@ tBirth = (
 -3000, # 0, #3000BC			# Babylonia
 -3000,					# Harappa
 -1600, # 50, #1600BC			# Greece
--1500, # 0, #3000BC			# India
+-600, # 0, #3000BC			# India
 -1200, # 66, #814BC # Leoreth: 1200 BC	# Carthage
 -1000,					# Polynesia
 -850, # 84, #844BC			# Persia
 -753, # 90, #753BC			# Rome
--300,					# Tamils
+848,					# Tamils
 -290, # 121, #300BC			# Ethiopia
 -50,					# Korea
 65, # 145, #60AD			# Maya
