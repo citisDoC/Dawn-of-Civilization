@@ -859,19 +859,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH1_TITLE</Tag>
-		<English>Nine Saints</English>
-		<French>Nine Saints</French>
-		<German>Neun Heilige</German>
-		<Italian>Nine Saints</Italian>
-		<Spanish>Nine Saints</Spanish>
+		<English>The Red Sea trade routes</English>
+		<French>The Red Sea trade routes</French>
+		<German>The Red Sea trade routes</German>
+		<Italian>The Red Sea trade routes</Italian>
+		<Spanish>The Red Sea trade routes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH1</Tag>
-		<English>Settle a Great Prophet in two Orthodox cities by 500 AD</English>
-		<French>Settle a Great Prophet in two Orthodox cities by 500 AD</French>
-		<German>Siedeln Sie bis zum Jahr 500 n. Chr. einen Großen Propheten in zwei orthodoxen Städten an</German>
-		<Italian>Settle a Great Prophet in two Orthodox cities by 500 AD</Italian>
-		<Spanish>Settle a Great Prophet in two Orthodox cities by 500 AD</Spanish>
+		<English>Open borders with Rome, Persia and India by 500AD.</English>
+		<French>Open borders with Rome, Persia and India by 500AD.</French>
+		<German>Open borders with Rome, Persia and India by 500AD.</German>
+		<Italian>Open borders with Rome, Persia and India by 500AD.</Italian>
+		<Spanish>Open borders with Rome, Persia and India by 500AD.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2_TITLE</Tag>
@@ -920,6 +920,18 @@
 		<German>Lassen Sie im Jahr 1910 n. Chr. keine europ&#228;ischen Kolonien im &#246;stlichen und sub&#228;quatorialen Afrika zu</German>
 		<Italian>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</Italian>
 		<Spanish>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</Spanish>
+=======
+		<English>Control 4 incense resources by 620AD.</English>
+		<German>Erlangen Sie bis 620 n. Chr. 4 Weihrauch-Ressourcen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ETH3_TITLE</Tag>
+		<English>Oriental Orthodoxy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ETH3</Tag>
+		<English>Build 3 Orthodox Cathedral in 1300AD</English>
+>>>>>>> Ethiopia
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1_TITLE</Tag>
