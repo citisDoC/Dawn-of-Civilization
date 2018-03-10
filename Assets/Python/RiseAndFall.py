@@ -700,7 +700,7 @@ class RiseAndFall:
 			utils.makeUnit(iSettler, iCarthage, (58, 39), 1)
 			utils.makeUnit(iArcher, iCarthage, (58, 39), 2)
 			utils.makeUnit(iWorker, iCarthage, (58, 39), 2)
-			utils.makeUnit(iAtlasElephant, iCarthage, (58, 39), 2)
+			#utils.makeUnit(iAtlasElephant, iCarthage, (58, 39), 2)
 			
 		if iGameTurn == getTurnForYear(476):
 			if pItaly.isHuman() and pRome.isAlive():
@@ -2336,6 +2336,10 @@ class RiseAndFall:
 			utils.makeUnit(iArcher, iCiv, tPlot, 4)
 			utils.makeUnit(iSpearman, iCiv, tPlot, 2)
 			utils.makeUnit(iLightSwordsman, iCiv, tPlot, 1)
+			pIndia.initUnit(iLightSwordsman, tPlot[0], tPlot[1], UnitAITypes.UNITAI_ATTACK_CITY, DirectionTypes.DIRECTION_SOUTH)
+			if utils.getHumanID() != iIndia:
+				utils.makeUnit(iChariot, iIndia, tPlot, 2)
+				pIndia.initUnit(iChariot, tPlot[0], tPlot[1], UnitAITypes.UNITAI_ATTACK_CITY, DirectionTypes.DIRECTION_SOUTH)
 		elif iCiv == iGreece:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 2)
@@ -2803,7 +2807,7 @@ class RiseAndFall:
 		elif iCiv == iCarthage:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iRome:
-			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+			utils.makeUnit(iWorker, iCiv, tPlot, 4)
 		elif iCiv == iJapan:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iTamils:

@@ -467,7 +467,7 @@ lEnemyCivsOnSpawn = [
 [iIndependent,iIndependent2], #China
 [iIndependent,iIndependent2], #Babylonia
 [], #Harappa
-[], #Greece
+[iCeltia], #Greece
 [], #India
 [iCeltia], #Carthage
 [], #Polynesia
