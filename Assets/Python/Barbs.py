@@ -52,6 +52,7 @@ tMinorCities = (
 (-80, (53, 48), iCeltia, 'Burdigala', 2, -1, -1),			# Bordeaux
 (-80, (56, 47), iCeltia, 'Lugodunon', 2, -1, -1),			# Lyon
 (-80, (55, 50), iCeltia, 'Lutetia', 2, -1, -1),				# Paris
+(-18, (109, 46), iIndependent, 'Hancheng', 2, iCrossbowman, 2),		# Seoul
 (100, (89, 34), iIndependent2, 'Pratisthan', 2, iWarElephant, 2),	# Satahavana
 (100, (18, 37), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
 (100, (76, 30), iIndependent, "Sana'a", 2, -1, -1),			# Sana'a
@@ -133,14 +134,14 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iGalley, 1, (50, 49), (61, 55), self.spawnPirates, iGameTurn, 20, 0, ["TXT_KEY_ADJECTIVE_NORSE"])
 			
 		#mongolia
-		if utils.isYearIn(-210, 400):
-			self.checkSpawn(iBarbarian, iHorseArcher, 3 + iHandicap, (94, 48), (107, 54), self.spawnNomads, iGameTurn, 8-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
-		elif utils.isYearIn(400, 900):
+		if utils.isYearIn(-210, 300):
+			self.checkSpawn(iBarbarian, iHorseman, 3 + iHandicap, (94, 48), (104, 54), self.spawnNomads, iGameTurn, 8-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
+		elif utils.isYearIn(300, 900):
 			iNumUnits = 2 + iHandicap
-			self.checkSpawn(iBarbarian, iHorseArcher, iNumUnits, (91, 50), (107, 54), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_GOKTURK", "TXT_KEY_ADJECTIVE_UIGHUR"])
+			self.checkSpawn(iBarbarian, iHorseArcher, iNumUnits, (91, 50), (104, 54), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_GOKTURK", "TXT_KEY_ADJECTIVE_UIGHUR"])
 		elif utils.isYearIn(900, 1100):
-			iNumUnits = 2 + iHandicap
-			self.checkSpawn(iBarbarian, iKeshik, iNumUnits, (94, 48), (107, 54), self.spawnInvaders, iGameTurn, 6, 0, ["TXT_KEY_ADJECTIVE_JURCHEN", "TXT_KEY_ADJECTIVE_KHITAN"])
+			iNumUnits = 1 + iHandicap
+			self.checkSpawn(iBarbarian, iKeshik, iNumUnits, (94, 48), (104, 54), self.spawnInvaders, iGameTurn, 6, 0, ["TXT_KEY_ADJECTIVE_JURCHEN", "TXT_KEY_ADJECTIVE_KHITAN"])
 			
 		#tibet
 		if utils.isYearIn(-350, 200):
@@ -354,6 +355,8 @@ class Barbs:
 				lBuildings = [iPaganTemple, iHarbor]
 			if sName in ['Lugodunon', 'Burdigala', 'Lutetia']:
 				lBuildings = [iDun]
+			if sName in ['Hancheng']:
+				lBuildings = [iLibrary, iHarbor, iWalls]
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
 			

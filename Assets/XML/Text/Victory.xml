@@ -899,39 +899,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2_MARATHON</Tag>
-		<English>Acquire 3 incense resources by 600 AD</English>
-		<French>Acquire 3 incense resources by 600 AD</French>
-		<German>Erlangen Sie bis 600 n. Chr. 3 Weihrauch-Ressourcen</German>
-		<Italian>Acquire 3 incense resources by 600 AD</Italian>
-		<Spanish>Acquire 3 incense resources by 600 AD</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ETH3_TITLE</Tag>
-		<English>Resisting the Scramble</English>
-		<French>Resisting the Scramble</French>
-		<German>Dem Wettlauf Widerstand leisten</German>
-		<Italian>Resisting the Scramble</Italian>
-		<Spanish>Resisting the Scramble</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ETH3</Tag>
-		<English>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</English>
-		<French>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</French>
-		<German>Lassen Sie im Jahr 1910 n. Chr. keine europ&#228;ischen Kolonien im &#246;stlichen und sub&#228;quatorialen Afrika zu</German>
-		<Italian>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</Italian>
-		<Spanish>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</Spanish>
-=======
-		<English>Control 4 incense resources by 620AD.</English>
+		<English>Acquire 4 incense resources by 620 AD</English>
+		<French>Acquire 4 incense resources by 620 AD</French>
 		<German>Erlangen Sie bis 620 n. Chr. 4 Weihrauch-Ressourcen</German>
+		<Italian>Acquire 4 incense resources by 620 AD</Italian>
+		<Spanish>Acquire 4 incense resources by 620 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH3_TITLE</Tag>
 		<English>Oriental Orthodoxy</English>
+		<French>Oriental Orthodoxy</French>
+		<German>Oriental Orthodoxy</German>
+		<Italian>Oriental Orthodoxy</Italian>
+		<Spanish>Oriental Orthodoxy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH3</Tag>
 		<English>Build 3 Orthodox Cathedral in 1300AD</English>
->>>>>>> Ethiopia
+		<French>Build 3 Orthodox Cathedral in 1300AD</French>
+		<German>Build 3 Orthodox Cathedral in 1300AD</German>
+		<Italian>Build 3 Orthodox Cathedral in 1300AD</Italian>
+		<Spanish>Build 3 Orthodox Cathedral in 1300AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1_TITLE</Tag>
@@ -1759,14 +1747,30 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR1_TITLE</Tag>
+		<English>Yayoi People</English>
+		<French>Yayoi People</French>
+		<German>Yayoi People</German>
+		<Italian>Yayoi People</Italian>
+		<Spanish>Yayoi People</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KOR1</Tag>
+		<English>Ensure there are no tribal villages on Japan in 300AD</English>
+		<French>Ensure there are no tribal villages on Japan in 300AD</French>
+		<German>Ensure there are no tribal villages on Japan in 300AD</German>
+		<Italian>Ensure there are no tribal villages on Japan in 300AD</Italian>
+		<Spanish>Ensure there are no tribal villages on Japan in 300AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KOR2_TITLE</Tag>
 		<English>Palman Daejanggyeong and Gukjagam</English>
 		<French>Palman Daejanggyeong and Gukjagam</French>
-		<German>Palman Daejanggyeong und Gukjagam</German>
+		<German>Palman Daejanggyeong and Gukjagam</German>
 		<Italian>Palman Daejanggyeong and Gukjagam</Italian>
 		<Spanish>Palman Daejanggyeong and Gukjagam</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_KOR1</Tag>
+		<Tag>TXT_KEY_UHV_KOR2</Tag>
 		<English>Build a Buddhist Chaitya and a Confucian Guozijian by 1200 AD</English>
 		<French>Build a Buddhist Chaitya and a Confucian Guozijian by 1200 AD</French>
 		<German>Bauen Sie eine Buddhistische Stupa und eine Konfuzianische Akademie bis zum Jahr 1200 n. Chr.</German>
@@ -1774,36 +1778,16 @@
 		<Spanish>Build a Buddhist Chaitya and a Confucian Guozijian by 1200 AD</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_KOR2_TITLE</Tag>
+		<Tag>TXT_KEY_UHV_KOR3_TITLE</Tag>
 		<English>Choe Yun-ui</English>
-		<French>Choe Yun-ui</French>
-		<German>Choe Yun-ui</German>
-		<Italian>Choe Yun-ui</Italian>
-		<Spanish>Choe Yun-ui</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_KOR2</Tag>
+		<Tag>TXT_KEY_UHV_KOR3</Tag>
 		<English>Be first to discover Printing</English>
 		<French>Be first to discover Printing</French>
 		<German>Erforschen Sie als Erster Buchdruck</German>
 		<Italian>Be first to discover Printing</Italian>
 		<Spanish>Be first to discover Printing</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_KOR3_TITLE</Tag>
-		<English>Yi Sun-sin</English>
-		<French>Yi Sun-sin</French>
-		<German>Yi Sun-sin</German>
-		<Italian>Yi Sun-sin</Italian>
-		<Spanish>Yi Sun-sin</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_KOR3</Tag>
-		<English>Sink 20 enemy ships</English>
-		<French>Sink 20 enemy ships</French>
-		<German>Versenken Sie 20 gegnerische Schiffe</German>
-		<Italian>Sink 20 enemy ships</Italian>
-		<Spanish>Sink 20 enemy ships</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL1_TITLE</Tag>

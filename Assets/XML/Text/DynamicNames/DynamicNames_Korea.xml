@@ -67,11 +67,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KOREA_JOSEON</Tag>
-		<English>Greater Joseon</English>
-		<French>Greater Joseon</French>
-		<German>Greater Joseon</German>
-		<Italian>Greater Joseon</Italian>
-		<Spanish>Greater Joseon</Spanish>
+		<English>Joseon</English>
+		<French>Joseon</French>
+		<German>Joseon</German>
+		<Italian>Joseon</Italian>
+		<Spanish>Joseon</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KOREA_ADJECTIVE</Tag>
@@ -124,5 +124,9 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_GOJOSEON</Tag>
+		<English>Gojoseon</English>
 	</TEXT>
 </Civ4GameText>

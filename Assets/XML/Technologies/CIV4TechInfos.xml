@@ -2022,7 +2022,6 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
-				<PrereqTech>TECH_THEOLOGY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_EDUCATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
