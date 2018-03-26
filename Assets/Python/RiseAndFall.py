@@ -3070,9 +3070,7 @@ class RiseAndFall:
 			
 		for iPlayer in range(iNumPlayers):
 			if tBirth[iPlayer] > utils.getScenarioStartYear() and gc.getPlayer(iPlayer).isHuman():
-				tCapital = Areas.getCapital(iPlayer)
-				utils.makeUnit(iSettler, iPlayer, tCapital, 1)
-				utils.makeUnit(iMilitia, iPlayer, tCapital, 1)
+				utils.makeUnit(iCatapult, iPlayer, (0, 0), 1)
 
 
 	def create4000BCstartingUnits(self):
