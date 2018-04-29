@@ -554,4 +554,8 @@
 		<Tag>TXT_KEY_LEADER_DHARMAPALA</Tag>
 		<English>Dharmapala</English>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CNUT</Tag>
+		<English>Cnut</English>
+	</TEXT>
 </Civ4GameText>

@@ -2690,7 +2690,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_OLYMPIANISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Olympianism.dds</PaganReligionButton>
 			<Identifier>ITA</Identifier>
-			<StartingYear>1167</StartingYear>
+			<StartingYear>697</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>35</LoadingTime>
 				<LoadingTime>15</LoadingTime>
@@ -2736,8 +2736,8 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_INFANTRY</UnitClassType>
-					<UnitType>UNIT_ITALIAN_BERSAGLIERE</UnitType>
+					<UnitClassType>UNITCLASS_HEAVY_SPEARMAN</UnitClassType>
+					<UnitType>UNIT_CONDOTTIERI</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2793,7 +2793,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_SHINTO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shinto.dds</PaganReligionButton>
 			<Identifier>JAP</Identifier>
-			<StartingYear>525</StartingYear>
+			<StartingYear>1160</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3216,7 +3216,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
 			<Identifier>MAL</Identifier>
-			<StartingYear>980</StartingYear>
+			<StartingYear>989</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>35</LoadingTime>
 				<LoadingTime>15</LoadingTime>
@@ -3642,7 +3642,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
 			<Identifier>MOO</Identifier>
-			<StartingYear>711</StartingYear>
+			<StartingYear>756</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
 				<LoadingTime>2</LoadingTime>
@@ -5644,7 +5644,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
 			<Identifier>VIK</Identifier>
-			<StartingYear>545</StartingYear>
+			<StartingYear>740</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>

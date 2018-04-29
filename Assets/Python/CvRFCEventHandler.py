@@ -124,6 +124,7 @@ class CvRFCEventHandler:
 		tCity = (city.getX(), city.getY())
 		
 		cnm.onCityAcquired(city, iPlayer)
+		dc.onCityAcquired(iOwner, iPlayer) # DynamicCivs, call before stability
 		
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
@@ -317,6 +318,11 @@ class CvRFCEventHandler:
 			city.setHasRealBuilding(iForge, True)
 			
 			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iOwner).getStateReligion(), True)
+		
+		#citis gift AI Venice market and harbor
+		if iOwner == iItaly and utils.getHumanID() != iOwner and tCity == (61, 47) and gc.getGame().getGameTurn() <= getTurnForYear(700)+3:
+			city.setHasRealBuilding(iMarket, True)
+			city.setHasRealBuilding(iHarbor, True)
 			
 		if iOwner == iPortugal and tCity == Areas.getCapital(iPortugal) and gc.getGame().getGameTurn() <= getTurnForYear(tBirth[iPortugal]) + 3:
 			city.setPopulation(5)
@@ -487,8 +493,7 @@ class CvRFCEventHandler:
 	def onTradeMission(self, argsList):
 		iUnitType, iPlayer, iX, iY, iGold = argsList
 		
-		if iPlayer in [iTamils, iMali]:
-			vic.onTradeMission(iPlayer, iX, iY, iGold)
+		vic.onTradeMission(iPlayer, iX, iY, iGold)
 		
 	def onPlayerSlaveTrade(self, argsList):
 		iPlayer, iGold = argsList

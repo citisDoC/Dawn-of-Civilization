@@ -54,7 +54,7 @@ tRomeEgyptBR = (72, 36)
 tConquestRomeCarthage = (0, iRome, iCarthage, tRomeCarthageTL, tRomeCarthageBR, 2, iRomeCarthageYear, 10)
 tConquestRomeGreece = (1, iRome, iGreece, tRomeGreeceTL, tRomeGreeceBR, 2, iRomeGreeceYear, 10)
 tConquestRomeAnatolia = (2, iRome, iGreece, tRomeAnatoliaTL, tRomeAnatoliaBR, 2, iRomeAnatoliaYear, 10)
-tConquestRomeCelts = (3, iRome, iCeltia, tRomeCeltiaTL, tRomeCeltiaBR, 2, iRomeAnatoliaYear, 10)
+tConquestRomeCelts = (3, iRome, iCeltia, tRomeCeltiaTL, tRomeCeltiaBR, 2, iRomeCeltiaYear, 10)
 tConquestRomeEgypt = (4, iRome, iEgypt, tRomeEgyptTL, tRomeEgyptBR, 2, iRomeEgyptYear, 10)
 
 iAlexanderYear = -340
@@ -86,10 +86,15 @@ tChinaTL = (101, 42)
 tChinaBR = (106, 48)
 
 tConquestQinChina = (10, iChina, iIndependent, tChinaTL, tChinaBR, 2, iChineseUnificationYear, 10)
-tConquestQinChina2 = (10, iChina, iIndependent2, tChinaTL, tChinaBR, 2, iChineseUnificationYear + 50, 10) #Chian deletes the conquerors
+tConquestQinChina2 = (10, iChina, iIndependent2, tChinaTL, tChinaBR, 2, iChineseUnificationYear + 50, 10) #China deletes the conquerors
 
+#Justianians conquests
+tJustinianYear = 535
+tSouthItalyTL = (60, 40)
+tSouthItalyBR = (63, 43)
+tConquestByzantiumSouthItaly = (10, iByzantium, iIndependent, tSouthItalyTL, tSouthItalyBR, 1, tJustinianYear, 10)
 
-lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestQinChina, tConquestQinChina2]
+lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestQinChina, tConquestQinChina2, tConquestByzantiumSouthItaly]
 
 class AIWars:
 		
@@ -103,8 +108,6 @@ class AIWars:
 
 
 	def checkTurn(self, iGameTurn):
-
-		print "Check AI wars"
 
 		#turn automatically peace on between independent cities and all the major civs
 		if iGameTurn % 20 == 7:
@@ -139,6 +142,7 @@ class AIWars:
 		self.checkConquest(tConquestQinChina2)
 		self.checkConquest(tConquestCholaSumatra)
 		
+		self.checkConquest(tConquestByzantiumSouthItaly)
 		
 		if iGameTurn == data.iNextTurnAIWar:
 			self.planWars(iGameTurn)
@@ -282,15 +286,19 @@ class AIWars:
 		if iTargetPlayer == -1:
 			return
 			
-		gc.getTeam(iAttackingPlayer).AI_setWarPlan(iTargetPlayer, WarPlanTypes.WARPLAN_PREPARING_LIMITED)
+		if gc.getTeam(iAttackingPlayer).canDeclareWar(iTargetPlayer):
+			gc.getTeam(iAttackingPlayer).AI_setWarPlan(iTargetPlayer, WarPlanTypes.WARPLAN_PREPARING_LIMITED)
 		
 		data.iNextTurnAIWar = iGameTurn + self.getNextInterval(iGameTurn)
 		
 	def determineAttackingPlayer(self):
-		lAggressionLevels = [data.players[i].iAggressionLevel for i in range(iNumPlayers)]
+		lAggressionLevels = [data.players[i].iAggressionLevel for i in range(iNumPlayers) if self.possibleTargets(i)]
 		iHighestEntry = utils.getHighestEntry(lAggressionLevels)
 		
 		return lAggressionLevels.index(iHighestEntry)
+		
+	def possibleTargets(self, iPlayer):
+		return [iLoopPlayer for iLoopPlayer in range(iNumPlayers) if iPlayer != iLoopPlayer and gc.getTeam(gc.getPlayer(iPlayer).getTeam()).canDeclareWar(gc.getPlayer(iLoopPlayer).getTeam())]
 		
 	def determineTargetPlayer(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
@@ -299,9 +307,11 @@ class AIWars:
 		lTargetValues = [0 for i in range(iNumPlayers)]
 
 		# determine potential targets
-		for iLoopPlayer in range(iNumPlayers):
+		for iLoopPlayer in self.possibleTargets(iPlayer):
 			pLoopPlayer = gc.getPlayer(iLoopPlayer)
 			tLoopPlayer = gc.getTeam(pLoopPlayer.getTeam())
+			
+			if iLoopPlayer == iPlayer: continue
 			
 			# requires live civ and past contact
 			if not pLoopPlayer.isAlive(): continue
