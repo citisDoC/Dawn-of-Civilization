@@ -1303,6 +1303,7 @@ class RiseAndFall:
 			
 			if iCiv == iSpain:
 				if not pFrance.isAlive() and utils.getHumanID() == iMoors:
+					gc.getPlayer(iPortugal).setLastStateReligion(iIslam)
 					return
 						
 		if utils.getHumanID() != iCiv and iCiv == iItaly:

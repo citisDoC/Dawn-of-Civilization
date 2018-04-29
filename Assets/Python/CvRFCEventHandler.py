@@ -525,7 +525,7 @@ class CvRFCEventHandler:
 		iOwner = city.getOwner()
 		tCity = (city.getX(), city.getY())
 		
-		vic.onBuildingBuilt(iOwner, iBuildingType)
+		vic.onBuildingBuilt(iOwner, iBuildingType, city)
 		self.rel.onBuildingBuilt(city, iOwner, iBuildingType)
 		self.up.onBuildingBuilt(city, iOwner, iBuildingType)
 		

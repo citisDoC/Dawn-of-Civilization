@@ -882,11 +882,11 @@ def checkTurn(iGameTurn, iPlayer):
 			expire(iMoors, 1)
 				
 		# third goal: acquire 3000 gold through piracy by 1650 AD
-		if isPossible(iMoors, 2):
-			if data.iMoorishGold >= utils.getTurns(3000):
-				win(iMoors, 2)
+		#if isPossible(iMoors, 2):
+		#	if data.iMoorishGold >= utils.getTurns(3000):
+		#		win(iMoors, 2)
 				
-		if iGameTurn == getTurnForYear(1650):
+		if iGameTurn == getTurnForYear(1500):
 			expire(iMoors, 2)
 			
 	elif iPlayer == iSpain:
@@ -1736,7 +1736,7 @@ def checkEraGoal(iPlayer, lEras):
 			return False
 	return True
 	
-def onBuildingBuilt(iPlayer, iBuilding):
+def onBuildingBuilt(iPlayer, iBuilding, city):
 
 	if not gc.getGame().isVictoryValid(7): return False
 	
@@ -1808,7 +1808,12 @@ def onBuildingBuilt(iPlayer, iBuilding):
 				bConfucian = getNumBuildings(iKorea, iConfucianCathedral) > 0
 				if bBuddhist and bConfucian:
 					win(iKorea, 1)
-					
+
+	elif iPlayer == iMoors:
+		if isPossible(iMoors, 2):
+			if iBuilding == iIslamicCathedral and (city.getX(), city.getY()) == (27, 38):
+				win(iMoors, 2)
+	
 	# third Polish goal: build a total of three Catholic, Orthodox and Protestant Cathedrals by 1600 AD
 	elif iPlayer == iPoland:
 		if isPossible(iPoland, 2):
@@ -1956,9 +1961,9 @@ def onUnitPillage(iPlayer, iGold, iUnit):
 		if isPossible(iVikings, 2):
 			data.iVikingGold += iGold
 			
-	elif iPlayer == iMoors:
-		if isPossible(iMoors, 2) and iUnit == iCorsair:
-			data.iMoorishGold += iGold
+	#elif iPlayer == iMoors:
+	#	if isPossible(iMoors, 2) and iUnit == iCorsair:
+	#		data.iMoorishGold += iGold
 		
 def onCityCaptureGold(iPlayer, iGold):
 
@@ -2017,9 +2022,10 @@ def onPeaceBrokered(iBroker, iPlayer1, iPlayer2):
 def onBlockade(iPlayer, iGold):
 
 	# third Moorish goal: acquire 3000 gold through piracy by 1650 AD
-	if iPlayer == iMoors:
-		if isPossible(iMoors, 2):
-			data.iMoorishGold += iGold
+	#if iPlayer == iMoors:
+	#	if isPossible(iMoors, 2):
+	#		data.iMoorishGold += iGold
+	return
 			
 def onFirstContact(iPlayer, iHasMetPlayer):
 
@@ -3717,9 +3723,9 @@ def getUHVHelp(iPlayer, iGoal):
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatScientist)
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatEngineer)
 			aHelp.append(getIcon(bMezquita) + localText.getText("TXT_KEY_BUILDING_LA_MEZQUITA", ()) + ' ' + getIcon(iCounter >= 4) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY_MOORS", ("Cordoba", iCounter, 4)))
-		elif iGoal == 2:
-			iRaidGold = data.iMoorishGold
-			aHelp.append(getIcon(iRaidGold >= utils.getTurns(3000)) + localText.getText("TXT_KEY_VICTORY_PIRACY", (iRaidGold, utils.getTurns(3000))))
+		#elif iGoal == 2:
+		#	iRaidGold = data.iMoorishGold
+		#	aHelp.append(getIcon(iRaidGold >= utils.getTurns(3000)) + localText.getText("TXT_KEY_VICTORY_PIRACY", (iRaidGold, utils.getTurns(3000))))
 
 	elif iPlayer == iSpain:
 		if iGoal == 1:
