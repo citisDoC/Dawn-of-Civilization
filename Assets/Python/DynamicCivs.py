@@ -1300,7 +1300,7 @@ def specificAdjective(iPlayer):
 				if iGameTurn >= getTurnForYear(600):
 					return "TXT_KEY_CIV_CHINA_TANG"
 				
-				return "TXT_KEY_CIV_CHINA_SUI"
+				return "TXT_KEY_CIV_CHINA_JIN"
 			
 			if iEra <= iClassical:
 				if iGameTurn >= getTurnForYear(0):
@@ -1736,13 +1736,15 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_INDIA_MAHAJANAPADAS"
 		
 		#not bEmpire and iEra <= iMedieval and not bCityStates
-		if gc.getPlayer(iPlayer).getNumCities() >= 1:
-			if iEra == iClassical:
-				return "TXT_KEY_CIV_INDIA_NANDA"
-			else:
+		if gc.getPlayer(iPlayer).getNumCities() == 1:
+			return "TXT_KEY_CIV_INDIA_MAGADHA"
+
+		if iEra == iClassical:
+			if bResurrected:
 				return "TXT_KEY_CIV_INDIA_SHUNGA"
-		return "TXT_KEY_CIV_INDIA_MAGADHA"
-					
+			else:
+				return "TXT_KEY_CIV_INDIA_NANDA"
+							
 	elif iPlayer == iChina:
 		if bEmpire:
 			if iEra >= iIndustrial or utils.getScenario() == i1700AD:

@@ -1396,7 +1396,7 @@ class RFCUtils:
 		return i1700AD
 		
 	def getScenarioStartYear(self):
-		lStartYears = [-3000, 600, 1700]
+		lStartYears = [-3000, 290, 1700, 290]
 		return lStartYears[self.getScenario()]
 		
 	def getScenarioStartTurn(self):

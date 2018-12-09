@@ -1101,4 +1101,8 @@
 		<Italian>Zulu</Italian>
 		<Spanish>Zulu</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_LOMBARD</Tag>
+		<English>Lombard</English>
+	</TEXT>
 </Civ4GameText>

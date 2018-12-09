@@ -206,8 +206,8 @@ class CvRFCEventHandler:
 				city.setOccupationTimer(0)
 				
 			# Byzantium reduced to four cities: core shrinks to Constantinople
-			if iOwner == iByzantium and gc.getPlayer(iByzantium).getNumCities <= 4:
-				utils.setReborn(iByzantium, True)
+			#if iOwner == iByzantium and gc.getPlayer(iByzantium).getNumCities <= 4:
+			#	utils.setReborn(iByzantium, True)
 					
 		if bTrade:
 			for i in range(iNumBuildings):
