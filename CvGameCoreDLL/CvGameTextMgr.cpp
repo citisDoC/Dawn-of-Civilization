@@ -3841,8 +3841,8 @@ It is fine for a human player mouse-over (which is what it is used for).
 void createTestFontString(CvWStringBuffer& szString)
 {
 	int iI;
-	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Χ]^_`abcdefghijklmnopqrstuvwxyz\n");
-	szString.append(L"{}~\\ίΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡÒΣΤΥΦΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώÿΏ΅«»°™©®€£Ά”‘“…’");
+	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Γ—]^_`abcdefghijklmnopqrstuvwxyz\n");
+	szString.append(L"{}~\\ΓΓ€ΓΓ‚ΓƒΓ„Γ…Γ†Γ‡ΓΓ‰ΓΓ‹ΓΓΓΓΓΓ‘Γ’Γ“Γ”Γ•Γ–ΓΓ™ΓΓ›ΓΓΓΒΓΓ Γ΅ΓΆΓ£Γ¤Γ¥Γ¦Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶Γ·ΓΈΓΉΓΊΓ»ΓΌΓ½ΓΎΓΏΒΏΒ΅Β«Β»Β°ΒΒΒΒΒΒΒ™Β©Β®Β€Β£ΒΆΒ”Β‘Β“");
 	for (iI=0;iI<NUM_YIELD_TYPES;++iI)
 		szString.append(CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar()));
 
