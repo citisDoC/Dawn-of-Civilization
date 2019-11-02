@@ -11,194 +11,178 @@
 			<Type>GAMESPEED_MARATHON</Type>
 			<Description>TXT_KEY_GAMESPEED_MARATHON</Description>
 			<Help>TXT_KEY_GAMESPEED_MARATHON_HELP</Help>
-			<iGrowthPercent>300</iGrowthPercent>
-			<iTrainPercent>200</iTrainPercent> <!-- Default: 180 -->
-			<iConstructPercent>300</iConstructPercent>
-			<iCreatePercent>300</iCreatePercent>
-			<iResearchPercent>300</iResearchPercent><!-- Default: 320; grows by up to 20% as the game progresses -->
-			<iBuildPercent>300</iBuildPercent>
-			<iImprovementPercent>300</iImprovementPercent>
-			<iGreatPeoplePercent>300</iGreatPeoplePercent>
-			<iCulturePercent>330</iCulturePercent>
-			<iAnarchyPercent>220</iAnarchyPercent>
-			<iBarbPercent>400</iBarbPercent>
-			<iFeatureProductionPercent>300</iFeatureProductionPercent>
-			<iUnitDiscoverPercent>300</iUnitDiscoverPercent>
-			<iUnitHurryPercent>300</iUnitHurryPercent>
-			<iUnitTradePercent>300</iUnitTradePercent>
-			<iUnitGreatWorkPercent>300</iUnitGreatWorkPercent>
-			<iGoldenAgePercent>300</iGoldenAgePercent> <!-- Default: 200 -->
-			<iHurryPercent>33</iHurryPercent>
-			<iHurryConscriptAngerPercent>300</iHurryConscriptAngerPercent>
-			<iInflationPercent>18</iInflationPercent>
-			<iInflationOffset>-360</iInflationOffset>
-			<iVictoryDelayPercent>300</iVictoryDelayPercent>
+			<iGrowthPercent>360</iGrowthPercent>
+			<iTrainPercent>360</iTrainPercent> <!-- Default: 180 -->
+			<iConstructPercent>360</iConstructPercent>
+			<iCreatePercent>360</iCreatePercent>
+			<iResearchPercent>360</iResearchPercent><!-- Default: 320; grows by up to 20% as the game progresses -->
+			<iBuildPercent>360</iBuildPercent>
+			<iImprovementPercent>360</iImprovementPercent>
+			<iGreatPeoplePercent>360</iGreatPeoplePercent>
+			<iCulturePercent>400</iCulturePercent>
+			<iAnarchyPercent>400</iAnarchyPercent>
+			<iBarbPercent>360</iBarbPercent>
+			<iFeatureProductionPercent>360</iFeatureProductionPercent>
+			<iUnitDiscoverPercent>360</iUnitDiscoverPercent>
+			<iUnitHurryPercent>360</iUnitHurryPercent>
+			<iUnitTradePercent>360</iUnitTradePercent>
+			<iUnitGreatWorkPercent>360</iUnitGreatWorkPercent>
+			<iGoldenAgePercent>360</iGoldenAgePercent> <!-- Default: 200 -->
+			<iHurryPercent>28</iHurryPercent>
+			<iHurryConscriptAngerPercent>360</iHurryConscriptAngerPercent>
+			<iInflationPercent>10</iInflationPercent>
+			<iInflationOffset>-432</iInflationOffset>
+			<iVictoryDelayPercent>360</iVictoryDelayPercent>
 			<GameTurnInfos>
-				<GameTurnInfo>
-					<iMonthIncrement>120</iMonthIncrement>
-					<iTurnsPerIncrement>90</iTurnsPerIncrement> <!-- 90 = 900 -->
+				<GameTurnInfo><!-- 4000BC - 625BC -->
+					<iMonthIncrement>81</iMonthIncrement>
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>96</iMonthIncrement>
-					<iTurnsPerIncrement>137</iTurnsPerIncrement> <!-- 137 = 1096 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>60</iMonthIncrement>
-					<iTurnsPerIncrement>316</iTurnsPerIncrement> <!-- 318 = 1580 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>48</iMonthIncrement>
-					<iTurnsPerIncrement>103</iTurnsPerIncrement> <!-- 103 = 412 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>36</iMonthIncrement>
-					<iTurnsPerIncrement>139</iTurnsPerIncrement> <!-- 139 = 417 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 625BC - 375AD -->
 					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>149</iTurnsPerIncrement> <!-- 149 = 298 -->
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>144</iTurnsPerIncrement> <!-- 144 = 144 -->
+				<GameTurnInfo><!-- 375AD - 1375AD -->
+					<iMonthIncrement>24</iMonthIncrement>
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>270</iTurnsPerIncrement> <!-- 270 = 135 -->
+				<GameTurnInfo><!-- 1375AD - May 1708AD -->
+					<iMonthIncrement>8</iMonthIncrement>
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- May 1708AD - 1875AD -->
+					<iMonthIncrement>4</iMonthIncrement>
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo><!-- 1875AD - 2000AD -->
 					<iMonthIncrement>3</iMonthIncrement>
-					<iTurnsPerIncrement>152</iTurnsPerIncrement> <!-- 152 = 38 -->
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<!-- 1500 turns = 5020 years -->
+				<GameTurnInfo><!-- 2000 - Sep 2016 -->
+					<iMonthIncrement>2</iMonthIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo><!-- Sep 2016 - 2050 -->
+					<iMonthIncrement>1</iMonthIncrement>
+					<iTurnsPerIncrement>400</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<!-- 3500 turns = 6050 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_EPIC</Type>
 			<Description>TXT_KEY_GAMESPEED_EPIC</Description>
 			<Help>TXT_KEY_GAMESPEED_EPIC_HELP</Help>
-			<iGrowthPercent>150</iGrowthPercent>
-			<iTrainPercent>150</iTrainPercent> 
-			<iConstructPercent>150</iConstructPercent>
-			<iCreatePercent>150</iCreatePercent>
-			<iResearchPercent>150</iResearchPercent> 
-			<iBuildPercent>150</iBuildPercent>
-			<iImprovementPercent>150</iImprovementPercent>
-			<iGreatPeoplePercent>150</iGreatPeoplePercent>
-			<iCulturePercent>165</iCulturePercent>
-			<iAnarchyPercent>165</iAnarchyPercent>
-			<iBarbPercent>150</iBarbPercent>
-			<iFeatureProductionPercent>150</iFeatureProductionPercent>
-			<iUnitDiscoverPercent>150</iUnitDiscoverPercent>
-			<iUnitHurryPercent>150</iUnitHurryPercent>
-			<iUnitTradePercent>150</iUnitTradePercent>
-			<iUnitGreatWorkPercent>150</iUnitGreatWorkPercent>
-			<iGoldenAgePercent>150</iGoldenAgePercent> 
-			<iHurryPercent>66</iHurryPercent>
-			<iHurryConscriptAngerPercent>150</iHurryConscriptAngerPercent>
-			<iInflationPercent>24</iInflationPercent>
+			<iGrowthPercent>180</iGrowthPercent>
+			<iTrainPercent>180</iTrainPercent> 
+			<iConstructPercent>180</iConstructPercent>
+			<iCreatePercent>180</iCreatePercent>
+			<iResearchPercent>180</iResearchPercent> 
+			<iBuildPercent>180</iBuildPercent>
+			<iImprovementPercent>180</iImprovementPercent>
+			<iGreatPeoplePercent>180</iGreatPeoplePercent>
+			<iCulturePercent>190</iCulturePercent>
+			<iAnarchyPercent>190</iAnarchyPercent>
+			<iBarbPercent>180</iBarbPercent>
+			<iFeatureProductionPercent>180</iFeatureProductionPercent>
+			<iUnitDiscoverPercent>180</iUnitDiscoverPercent>
+			<iUnitHurryPercent>180</iUnitHurryPercent>
+			<iUnitTradePercent>180</iUnitTradePercent>
+			<iUnitGreatWorkPercent>180</iUnitGreatWorkPercent>
+			<iGoldenAgePercent>180</iGoldenAgePercent> 
+			<iHurryPercent>55</iHurryPercent>
+			<iHurryConscriptAngerPercent>180</iHurryConscriptAngerPercent>
+			<iInflationPercent>19</iInflationPercent>
 			<iInflationOffset>-180</iInflationOffset>
-			<iVictoryDelayPercent>150</iVictoryDelayPercent>
+			<iVictoryDelayPercent>180</iVictoryDelayPercent>
 			<GameTurnInfos>
-				<GameTurnInfo>
-					<iMonthIncrement>240</iMonthIncrement>
-					<iTurnsPerIncrement>45</iTurnsPerIncrement> <!-- 45 = 900 -->
+				<GameTurnInfo><!-- 4000BC - 600BC -->
+					<iMonthIncrement>136</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>180</iMonthIncrement>
-					<iTurnsPerIncrement>74</iTurnsPerIncrement> <!-- 74 = 1110 -->
+				<GameTurnInfo><!-- 600BC - 400AD -->
+					<iMonthIncrement>40</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>120</iMonthIncrement>
-					<iTurnsPerIncrement>159</iTurnsPerIncrement> <!-- 159 = 1590 -->
+				<GameTurnInfo><!-- 400AD - 1400AD -->
+					<iMonthIncrement>40</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>96</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 400 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>60</iMonthIncrement>
-					<iTurnsPerIncrement>80</iTurnsPerIncrement> <!-- 80 = 400 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>48</iMonthIncrement>
-					<iTurnsPerIncrement>80</iTurnsPerIncrement> <!-- 80 = 320 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>80</iTurnsPerIncrement> <!-- 80 = 160 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 1400AD - 1700AD -->
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>98</iTurnsPerIncrement> <!-- 98 = 98 -->
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>84</iTurnsPerIncrement> <!-- 42 = 42 -->
+				<GameTurnInfo><!-- 1700AD - 1900AD -->
+					<iMonthIncrement>8</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<!-- 750 turns = 5020 years -->
+				<GameTurnInfo><!-- 1900 - 2000 -->
+					<iMonthIncrement>4</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo><!-- 2000 - 2050 -->
+					<iMonthIncrement>2</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<!-- 2100 turns = 6050 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_NORMAL</Type>
 			<Description>TXT_KEY_GAMESPEED_NORMAL</Description>
 			<Help>TXT_KEY_GAMESPEED_NORMAL_HELP</Help>
-			<iGrowthPercent>100</iGrowthPercent>
-			<iTrainPercent>100</iTrainPercent>
-			<iConstructPercent>100</iConstructPercent>
-			<iCreatePercent>100</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
-			<iBuildPercent>100</iBuildPercent>
-			<iImprovementPercent>100</iImprovementPercent>
-			<iGreatPeoplePercent>100</iGreatPeoplePercent>
-			<iCulturePercent>100</iCulturePercent>
-			<iAnarchyPercent>100</iAnarchyPercent>
-			<iBarbPercent>100</iBarbPercent>
-			<iFeatureProductionPercent>100</iFeatureProductionPercent>
-			<iUnitDiscoverPercent>100</iUnitDiscoverPercent>
-			<iUnitHurryPercent>100</iUnitHurryPercent>
-			<iUnitTradePercent>100</iUnitTradePercent>
-			<iUnitGreatWorkPercent>100</iUnitGreatWorkPercent>
-			<iGoldenAgePercent>100</iGoldenAgePercent>
-			<iHurryPercent>100</iHurryPercent>
-			<iHurryConscriptAngerPercent>100</iHurryConscriptAngerPercent>
-			<iInflationPercent>35</iInflationPercent>
-			<iInflationOffset>-120</iInflationOffset>
-			<iVictoryDelayPercent>100</iVictoryDelayPercent>
+			<iGrowthPercent>120</iGrowthPercent>
+			<iTrainPercent>120</iTrainPercent>
+			<iConstructPercent>120</iConstructPercent>
+			<iCreatePercent>120</iCreatePercent>
+			<iResearchPercent>120</iResearchPercent>
+			<iBuildPercent>120</iBuildPercent>
+			<iImprovementPercent>120</iImprovementPercent>
+			<iGreatPeoplePercent>120</iGreatPeoplePercent>
+			<iCulturePercent>120</iCulturePercent>
+			<iAnarchyPercent>120</iAnarchyPercent>
+			<iBarbPercent>120</iBarbPercent>
+			<iFeatureProductionPercent>120</iFeatureProductionPercent>
+			<iUnitDiscoverPercent>120</iUnitDiscoverPercent>
+			<iUnitHurryPercent>120</iUnitHurryPercent>
+			<iUnitTradePercent>120</iUnitTradePercent>
+			<iUnitGreatWorkPercent>120</iUnitGreatWorkPercent>
+			<iGoldenAgePercent>120</iGoldenAgePercent>
+			<iHurryPercent>83</iHurryPercent>
+			<iHurryConscriptAngerPercent>120</iHurryConscriptAngerPercent>
+			<iInflationPercent>29</iInflationPercent>
+			<iInflationOffset>-144</iInflationOffset>
+			<iVictoryDelayPercent>120</iVictoryDelayPercent>
 			<GameTurnInfos>
-				<GameTurnInfo>
-					<iMonthIncrement>360</iMonthIncrement>
-					<iTurnsPerIncrement>30</iTurnsPerIncrement> <!-- 30 = 900 -->
+				<GameTurnInfo><!-- 4000BC - 600BC -->
+					<iMonthIncrement>408</iMonthIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>300</iMonthIncrement>
-					<iTurnsPerIncrement>44</iTurnsPerIncrement> <!-- 44 = 1100 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>180</iMonthIncrement>
-					<iTurnsPerIncrement>106</iTurnsPerIncrement> <!-- 106 = 1590 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 600BC - 400AD -->
 					<iMonthIncrement>120</iMonthIncrement>
-					<iTurnsPerIncrement>81</iTurnsPerIncrement> <!-- 81 = 810 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>60</iMonthIncrement>
-					<iTurnsPerIncrement>60</iTurnsPerIncrement> <!-- 60 = 300 -->
+				<GameTurnInfo><!-- 400AD - 1400AD -->
+					<iMonthIncrement>120</iMonthIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 1400AD - 1700AD -->
 					<iMonthIncrement>36</iMonthIncrement>
-					<iTurnsPerIncrement>48</iTurnsPerIncrement> <!-- 48 = 144 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 1700AD - 1900AD -->
 					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>45</iTurnsPerIncrement> <!-- 45 = 90 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<GameTurnInfo>
+				<GameTurnInfo><!-- 1900 - 2000 -->
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>86</iTurnsPerIncrement> <!-- 86 = 86 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
-				<!-- 500 turns = 5020 years -->
+				<GameTurnInfo><!-- 2000 - 2050 -->
+					<iMonthIncrement>6</iMonthIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<!-- 700 turns = 6050 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 	</GameSpeedInfos>
