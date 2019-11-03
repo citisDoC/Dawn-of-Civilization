@@ -17548,9 +17548,20 @@ bool CvUnitAI::AI_plotValid(CvPlot* pPlot)
 {
 	PROFILE_FUNC();
 
-	if (m_pUnitInfo->isNoRevealMap() && willRevealByMove(pPlot))
-	{
-		return false;
+	// Cannot move around in unrevealed land freely
+	//If plot a city, movement is always allowed
+	//If movement to plot reveals new territory conditions apply
+	if (!pPlot->isCity() && !isBarbarian() && willRevealByMove(pPlot)) {
+		if (m_pUnitInfo->isNoRevealMap())
+		{
+			//Non recon units are not allowed to explore
+			return false;
+		} else {
+			//Recon units can explore owned tiles and trade networks
+			if(pPlot->getActualTotalCulture() == 0 && !plot()->isTradeNetworkConnected(pPlot, getTeam())) {
+				return false;
+			}
+		}
 	}
 
 	switch (getDomainType())

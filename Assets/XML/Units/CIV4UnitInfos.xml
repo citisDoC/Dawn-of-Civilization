@@ -65,6 +65,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BEAR</Class>
@@ -117,6 +118,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PANTHER</Class>
@@ -169,6 +171,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WOLF</Class>
@@ -231,6 +234,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
@@ -275,6 +279,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
@@ -320,6 +325,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
@@ -366,6 +372,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WORKER</Class>
@@ -507,6 +514,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WORKER</Class>
@@ -645,6 +653,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LABOURER</Class>
@@ -781,6 +790,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LABOURER</Class>
@@ -924,6 +934,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SCOUT</Class>
@@ -976,6 +987,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_EXPLORER</Class>
@@ -1033,6 +1045,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_EXPLORER</Class>
@@ -1093,6 +1106,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPY</Class>
@@ -1142,6 +1156,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_RELIGIOUS_PERSECUTOR</Class>
@@ -1179,6 +1194,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_JEWISH_MISSIONARY</Class>
@@ -1216,6 +1232,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ORTHODOX_MISSIONARY</Class>
@@ -1253,6 +1270,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CATHOLIC_MISSIONARY</Class>
@@ -1290,6 +1308,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PROTESTANT_MISSIONARY</Class>
@@ -1327,6 +1346,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ISLAMIC_MISSIONARY</Class>
@@ -1364,6 +1384,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HINDU_MISSIONARY</Class>
@@ -1401,6 +1422,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BUDDHIST_MISSIONARY</Class>
@@ -1438,6 +1460,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CONFUCIAN_MISSIONARY</Class>
@@ -1475,6 +1498,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TAOIST_MISSIONARY</Class>
@@ -1512,6 +1536,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ZOROASTRIAN_MISSIONARY</Class>
@@ -1549,6 +1574,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WARRIOR</Class>
@@ -1635,6 +1661,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA</Class>
@@ -1720,6 +1747,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_AXEMAN</Class>
@@ -1818,6 +1846,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LIGHT_SWORDSMAN</Class>
@@ -1909,6 +1938,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LIGHT_SWORDSMAN</Class>
@@ -2006,6 +2036,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LIGHT_SWORDSMAN</Class>
@@ -2095,6 +2126,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2180,6 +2212,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2254,6 +2287,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2338,6 +2372,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2432,6 +2467,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2532,6 +2568,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SWORDSMAN</Class>
@@ -2614,6 +2651,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SWORDSMAN</Class>
@@ -2705,6 +2743,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SWORDSMAN</Class>
@@ -2799,6 +2838,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SWORDSMAN</Class>
@@ -2896,6 +2936,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SWORDSMAN</Class>
@@ -2995,6 +3036,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SWORDSMAN</Class>
@@ -3074,6 +3116,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPEARMAN</Class>
@@ -3167,6 +3210,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPEARMAN</Class>
@@ -3274,6 +3318,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPEARMAN</Class>
@@ -3367,6 +3412,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPEARMAN</Class>
@@ -3468,6 +3514,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SPEARMAN</Class>
@@ -3555,6 +3602,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_SPEARMAN</Class>
@@ -3648,6 +3696,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PIKEMAN</Class>
@@ -3742,6 +3791,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PIKEMAN</Class>
@@ -3834,6 +3884,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -3910,6 +3961,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -3989,6 +4041,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4079,6 +4132,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4161,6 +4215,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4259,6 +4314,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4355,6 +4411,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4443,6 +4500,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
@@ -4529,6 +4587,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MUSKETEER</Class>
@@ -4621,6 +4680,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MUSKETEER</Class>
@@ -4716,6 +4776,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MUSKETEER</Class>
@@ -4818,6 +4879,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MUSKETEER</Class>
@@ -4916,6 +4978,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_RIFLEMAN</Class>
@@ -4996,6 +5059,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_RIFLEMAN</Class>
@@ -5086,6 +5150,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GRENADIER</Class>
@@ -5181,6 +5246,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GRENADIER</Class>
@@ -5274,6 +5340,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GRENADIER</Class>
@@ -5377,6 +5444,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GRENADIER</Class>
@@ -5465,6 +5533,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_AT_INFANTRY</Class>
@@ -5549,6 +5618,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_INFANTRY</Class>
@@ -5645,6 +5715,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SAM_INFANTRY</Class>
@@ -5731,6 +5802,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MOBILE_SAM</Class>
@@ -5814,6 +5886,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MARINE</Class>
@@ -5898,6 +5971,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MARINE</Class>
@@ -5981,6 +6055,7 @@
 				</FreePromotion>
 			</FreePromotions>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PARATROOPER</Class>
@@ -6049,6 +6124,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MECHANIZED_INFANTRY</Class>
@@ -6130,6 +6206,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARCHER</Class>
@@ -6209,6 +6286,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARCHER</Class>
@@ -6295,6 +6373,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARCHER</Class>
@@ -6374,6 +6453,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SKIRMISHER</Class>
@@ -6467,6 +6547,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SKIRMISHER</Class>
@@ -6550,6 +6631,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SKIRMISHER</Class>
@@ -6665,6 +6747,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LONGBOWMAN</Class>
@@ -6764,6 +6847,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LONGBOWMAN</Class>
@@ -6873,6 +6957,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CROSSBOWMAN</Class>
@@ -6961,6 +7046,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CROSSBOWMAN</Class>
@@ -7052,6 +7138,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CROSSBOWMAN</Class>
@@ -7155,6 +7242,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CHARIOT</Class>
@@ -7244,6 +7332,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CHARIOT</Class>
@@ -7336,6 +7425,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CHARIOT</Class>
@@ -7421,6 +7511,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CHARIOT</Class>
@@ -7508,6 +7599,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSEMAN</Class>
@@ -7609,6 +7701,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSEMAN</Class>
@@ -7718,6 +7811,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSEMAN</Class>
@@ -7827,6 +7921,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSEMAN</Class>
@@ -7934,6 +8029,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CAMEL_RIDER</Class>
@@ -8053,6 +8149,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
@@ -8132,6 +8229,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
@@ -8211,6 +8309,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
@@ -8284,6 +8383,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
@@ -8371,6 +8471,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CAMEL_ARCHER</Class>
@@ -8474,6 +8575,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -8568,6 +8670,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -8660,6 +8763,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -8752,6 +8856,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -8843,6 +8948,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -8935,6 +9041,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -9035,6 +9142,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -9134,6 +9242,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_LANCER</Class>
@@ -9234,6 +9343,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PISTOLIER</Class>
@@ -9343,6 +9453,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PISTOLIER</Class>
@@ -9444,6 +9555,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CAMEL_GUNNER</Class>
@@ -9569,6 +9681,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
@@ -9654,6 +9767,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
@@ -9749,6 +9863,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
@@ -9850,6 +9965,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
@@ -9945,6 +10061,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HUSSAR</Class>
@@ -10062,6 +10179,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HUSSAR</Class>
@@ -10186,6 +10304,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HUSSAR</Class>
@@ -10314,6 +10433,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DRAGOON</Class>
@@ -10396,6 +10516,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DRAGOON</Class>
@@ -10487,6 +10608,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DRAGOON</Class>
@@ -10579,6 +10701,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CAVALRY</Class>
@@ -10697,6 +10820,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CAVALRY</Class>
@@ -10820,6 +10944,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WAR_ELEPHANT</Class>
@@ -10893,6 +11018,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WAR_ELEPHANT</Class>
@@ -10973,6 +11099,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TANK</Class>
@@ -11053,6 +11180,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TANK</Class>
@@ -11147,6 +11275,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MAIN_BATTLE_TANK</Class>
@@ -11225,6 +11354,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GUNSHIP</Class>
@@ -11312,6 +11442,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CATAPULT</Class>
@@ -11398,6 +11529,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CATAPULT</Class>
@@ -11483,6 +11615,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TREBUCHET</Class>
@@ -11571,6 +11704,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11658,6 +11792,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11745,6 +11880,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11843,6 +11979,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11930,6 +12067,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CANNON</Class>
@@ -12018,6 +12156,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARTILLERY</Class>
@@ -12112,6 +12251,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MACHINE_GUN</Class>
@@ -12194,6 +12334,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HOWITZER</Class>
@@ -12288,6 +12429,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MOBILE_ARTILLERY</Class>
@@ -12373,6 +12515,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WORK_BOAT</Class>
@@ -12460,6 +12603,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEY</Class>
@@ -12490,6 +12634,10 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -12537,6 +12685,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEY</Class>
@@ -12571,6 +12720,10 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_WORKER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -12625,6 +12778,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEY</Class>
@@ -12656,6 +12810,10 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -12724,6 +12882,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WAR_GALLEY</Class>
@@ -12754,10 +12913,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -12807,6 +12962,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_GALLEY</Class>
@@ -12841,10 +12997,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -12903,6 +13055,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_GALLEY</Class>
@@ -12937,10 +13090,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -13002,6 +13151,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HEAVY_GALLEY</Class>
@@ -13036,10 +13186,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -13123,6 +13269,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_COG</Class>
@@ -13212,6 +13359,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_COG</Class>
@@ -13302,6 +13450,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEASS</Class>
@@ -13397,6 +13546,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEASS</Class>
@@ -13502,6 +13652,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEASS</Class>
@@ -13597,6 +13748,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEASS</Class>
@@ -13692,6 +13844,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CARAVEL</Class>
@@ -13729,15 +13882,15 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
 					<UnitAIType>UNITAI_MISSIONARY_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_SPY_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -13753,7 +13906,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<SpecialCargo>SPECIALUNIT_PEOPLE</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>1</iCargo>
+			<iCargo>0</iCargo>
 			<iAsset>2</iAsset>
 			<iPower>6</iPower>
 			<UnitMeshGroups>
@@ -13768,6 +13921,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CARAVEL</Class>
@@ -13813,15 +13967,15 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
 					<UnitAIType>UNITAI_MISSIONARY_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_SPY_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -13857,6 +14011,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>0</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEON</Class>
@@ -13924,6 +14079,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GALLEON</Class>
@@ -13996,6 +14152,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PRIVATEER</Class>
@@ -14077,6 +14234,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PRIVATEER</Class>
@@ -14183,6 +14341,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_FRIGATE</Class>
@@ -14249,6 +14408,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
@@ -14315,6 +14475,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
@@ -14381,6 +14542,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_STEAMSHIP</Class>
@@ -14444,6 +14606,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_IRONCLAD</Class>
@@ -14509,6 +14672,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TORPEDO_BOAT</Class>
@@ -14590,6 +14754,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CRUISER</Class>
@@ -14656,6 +14821,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TRANSPORT</Class>
@@ -14714,6 +14880,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DESTROYER</Class>
@@ -14750,10 +14917,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -14814,6 +14977,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DESTROYER</Class>
@@ -14850,10 +15014,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -14920,6 +15080,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BATTLESHIP</Class>
@@ -14985,6 +15146,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MISSILE_CRUISER</Class>
@@ -15052,6 +15214,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_STEALTH_DESTROYER</Class>
@@ -15079,10 +15242,6 @@
 				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -15115,6 +15274,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SUBMARINE</Class>
@@ -15145,10 +15305,6 @@
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -15184,6 +15340,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_NUCLEAR_SUBMARINE</Class>
@@ -15208,10 +15365,6 @@
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -15264,6 +15417,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CARRIER</Class>
@@ -15321,6 +15475,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BIPLANE</Class>
@@ -15383,6 +15538,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_FIGHTER</Class>
@@ -15445,6 +15601,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_FIGHTER</Class>
@@ -15514,6 +15671,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_JET_FIGHTER</Class>
@@ -15573,6 +15731,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBER</Class>
@@ -15640,6 +15799,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_STEALTH_BOMBER</Class>
@@ -15702,6 +15862,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GUIDED_MISSILE</Class>
@@ -15753,6 +15914,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_DRONE</Class>
@@ -15811,6 +15973,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_NUCLEAR_BOMBER</Class>
@@ -15859,6 +16022,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ICBM</Class>
@@ -15904,6 +16068,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SATELLITE</Class>
@@ -15966,6 +16131,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_PROPHET</Class>
@@ -16061,6 +16227,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_ARTIST</Class>
@@ -16120,6 +16287,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_SCIENTIST</Class>
@@ -16178,6 +16346,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_MERCHANT</Class>
@@ -16239,6 +16408,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_ENGINEER</Class>
@@ -16299,6 +16469,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_STATESMAN</Class>
@@ -16360,6 +16531,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_GENERAL</Class>
@@ -16418,6 +16590,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<LeaderPromotion>PROMOTION_LEADER</LeaderPromotion>
 			<iLeaderExperience>20</iLeaderExperience>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_GENERAL</Class>
@@ -16478,6 +16651,7 @@
 			<LeaderPromotion>PROMOTION_LEADER</LeaderPromotion>
 			<iLeaderExperience>20</iLeaderExperience>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_SPY</Class>
@@ -16580,6 +16754,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_PROPHET</Class>
@@ -16675,6 +16850,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_ARTIST</Class>
@@ -16735,6 +16911,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_SCIENTIST</Class>
@@ -16794,6 +16971,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_MERCHANT</Class>
@@ -16856,6 +17034,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_ENGINEER</Class>
@@ -16917,6 +17096,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_STATESMAN</Class>
@@ -16979,6 +17159,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_GENERAL</Class>
@@ -17038,6 +17219,7 @@
 			<LeaderPromotion>PROMOTION_LEADER</LeaderPromotion>
 			<iLeaderExperience>20</iLeaderExperience>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_GREAT_SPY</Class>
@@ -17097,6 +17279,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SLAVE</Class>
@@ -17152,6 +17335,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SLAVE</Class>
@@ -17209,6 +17393,7 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bNoRevealMap>1</bNoRevealMap>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

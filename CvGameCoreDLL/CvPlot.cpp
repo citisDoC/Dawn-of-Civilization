@@ -4352,7 +4352,7 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 			}
 		}
 
-		if (isRiverConnection(directionXY(this, pPlot)) || pPlot->isRiverConnection(directionXY(pPlot, this)))
+		if (isRiverConnection(directionXY(this, pPlot)) && pPlot->isRiverConnection(directionXY(pPlot, this)))
 		{
 			if (pPlot->isRiverNetwork(eTeam))
 			{

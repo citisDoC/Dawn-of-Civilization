@@ -2580,6 +2580,21 @@ bool CvUnit::willRevealByMove(const CvPlot* pPlot) const
 			CvPlot* pLoopPlot = ::plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), i, j);
 			if (NULL != pLoopPlot)
 			{
+				if (pLoopPlot->getTeam() == getTeam()) {
+					//If adjuscent to own tiles allow movement
+					return false;
+				}
+			}
+		}
+	}
+
+	for (int i = -iRange; i <= iRange; ++i)
+	{
+		for (int j = -iRange; j <= iRange; ++j)
+		{
+			CvPlot* pLoopPlot = ::plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), i, j);
+			if (NULL != pLoopPlot)
+			{
 				if (!pLoopPlot->isRevealed(getTeam(), false) && pPlot->canSeePlot(pLoopPlot, getTeam(), visibilityRange(), NO_DIRECTION))
 				{
 					return true;
@@ -2611,9 +2626,19 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	}
 
 	// Cannot move around in unrevealed land freely
-	if (m_pUnitInfo->isNoRevealMap() && willRevealByMove(pPlot))
-	{
-		return false;
+	//If plot a city, movement is always allowed
+	//If movement to plot reveals new territory conditions apply
+	if (!pPlot->isCity() && !isBarbarian() && willRevealByMove(pPlot)) {
+		if (m_pUnitInfo->isNoRevealMap())
+		{
+			//Non recon units are not allowed to explore
+			return false;
+		} else {
+			//Recon units can explore owned tiles and trade networks
+			if(pPlot->getActualTotalCulture() == 0 && !plot()->isTradeNetworkConnected(pPlot, getTeam())) {
+				return false;
+			}
+		}
 	}
 
 	if (GC.getUSE_SPIES_NO_ENTER_BORDERS())
