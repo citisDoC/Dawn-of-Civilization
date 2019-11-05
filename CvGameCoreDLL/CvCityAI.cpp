@@ -444,6 +444,11 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 
 	iValue = AI_yieldValue(aiYields, aiCommerceYields, bAvoidGrowth, bRemove);
 
+	//Teach AI to coop with unhapiness and indirectly with stability
+	int angryTimes100 = (unhappyLevel() - happyLevel()) * 225 + 25;
+	iValue += angryTimes100 * (-aiCommerceYields[COMMERCE_MAINTENANCE]);
+	iValue += angryTimes100 * GC.getSpecialistInfo(eSpecialist).getHappiness();
+
 	iGreatPeopleRate = getSpecialistGreatPeopleRateChange(eSpecialist);
 
 	int iEmphasisCount = 0;

@@ -7209,7 +7209,10 @@ int CvCity::calculateNumCitiesMaintenanceTimes100() const
 
 	FAssert(iNumCitiesMaintenance >= 0);
 
-	return iNumCitiesMaintenance;
+	//citis: 5th commerce reduced maintenance
+	int reducedMaintenance = getBaseCommerceRateTimes100(COMMERCE_MAINTENANCE);
+
+	return iNumCitiesMaintenance + reducedMaintenance;
 }
 
 
@@ -10783,6 +10786,9 @@ void CvCity::updateCommerce(CommerceTypes eIndex)
 		{
 			gDLL->getInterfaceIFace()->setDirty(InfoPane_DIRTY_BIT, true );
 			gDLL->getInterfaceIFace()->setDirty(CityScreen_DIRTY_BIT, true);
+		}
+		if (eIndex == COMMERCE_MAINTENANCE) {
+			updateMaintenance();
 		}
 	}
 }
