@@ -35,6 +35,7 @@ from Consts import *
 from RFCUtils import utils
 from operator import itemgetter
 import Areas
+import math
 
 # globals
 gc = CyGlobalContext()
@@ -59,8 +60,7 @@ class UniquePowers:
 		if iGameTurn >= getTurnForYear(tBirth[iRussia]) and pRussia.isAlive():
 			self.russianUP()
 
-		if iGameTurn >= getTurnForYear(tBirth[iAmerica])+utils.getTurns(5):
-			self.checkImmigration()
+		self.checkImmigration()
 
 		if iGameTurn >= getTurnForYear(tBirth[iIndonesia]) and pIndonesia.isAlive():
 			self.indonesianUP()
@@ -364,12 +364,8 @@ class UniquePowers:
 
 	def checkImmigration(self):
 	
-		if data.iImmigrationTimer == 0:
-			self.doImmigration()
-			iRandom = gc.getGame().getSorenRandNum(5, 'random')
-			data.iImmigrationTimer = 3 + iRandom # 3-7 turns
-		else:
-			data.iImmigrationTimer -= 1
+		self.doImmigration()
+
 			
 	def doImmigration(self):
 	
@@ -377,112 +373,100 @@ class UniquePowers:
 		lSourceCities = []
 		lTargetCities = []
 		
-		for iPlayer in range(iNumPlayers):
-			if iPlayer in lCivBioNewWorld and not utils.isReborn(iPlayer): continue # no immigration to natives
-			pPlayer = gc.getPlayer(iPlayer)
-			lCities = []
-			bNewWorld = pPlayer.getCapitalCity().getRegionID() in lNewWorld
-			for city in utils.getCityList(iPlayer):
-				iFoodDifference = city.foodDifference(False)
-				iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-				if city.getRegionID() in lNewWorld and bNewWorld:
-					if iFoodDifference <= 0 or iHappinessDifference <= 0: continue
-					iNorthAmericaBonus = 0
-					if city.getRegionID() in [rCanada, rUnitedStates]: iNorthAmericaBonus = 5
-					lCities.append((city, iHappinessDifference + iFoodDifference / 2 + city.getPopulation() / 2 + iNorthAmericaBonus))
-				elif city.getRegionID() not in lNewWorld and not bNewWorld:
-					iValue = 0
-					if iFoodDifference < 0:
-						iValue -= iFoodDifference / 2
-					if iHappinessDifference < 0:
-						iValue -= iHappinessDifference
-					if iValue > 0:
-						lCities.append((city, iValue))
-			
-			if lCities:
-				lCities.sort(key=itemgetter(1), reverse=True)
-			
-				if bNewWorld:
-					lTargetCities.append(lCities[0])
-				else:
-					lSourceCities.append(lCities[0])
-				
-		# sort highest to lowest for happiness/unhappiness
-		lSourceCities.sort(key=itemgetter(1), reverse=True)
-		lTargetCities.sort(key=itemgetter(1), reverse=True)
+		dHappyCities = {}
+                lUnhappyCities = []
+                for iPlayer in range(iNumPlayers):
+                        pPlayer = gc.getPlayer(iPlayer)
+                        for city in utils.getCityList(iPlayer):
+                                iFoodDifference = city.foodDifference(False)
+                                iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
+                                iValue = iFoodDifference * city.getPopulation() + iHappinessDifference
+                                if (iHappinessDifference > 0 and iFoodDifference > 0):
+                                    dHappyCities[city.getNameKey()] = (city, iValue)
+                                elif (iHappinessDifference <= 0 or iFoodDifference < 0):
+                                    lUnhappyCities.append((city, iValue))
+                                
+                if lUnhappyCities:
+                        lUnhappyCities.sort(key=itemgetter(1))
+                
+                        for sourceCity, _ in lUnhappyCities:
+                                if len(dHappyCities) == 0: return
+                                lCandidateCities = []
+                                for iTradeRoute in range(sourceCity.getTradeRoutes()):
+                                        tradeCity = sourceCity.getTradeCity(iTradeRoute)
+                                        if (tradeCity.getNameKey() in dHappyCities):
+                                                lCandidateCities.append(dHappyCities[tradeCity.getNameKey()])
+                                if (lCandidateCities):
+                                        lCandidateCities.sort(key=itemgetter(1), reverse=True)
+                                        (targetCity, _) = lCandidateCities[0]
+                                        dHappyCities.pop(targetCity.getNameKey())
+                                        #CyInterface().addMessage(utils.getHumanID(), False, iDuration, str(len(lCandidateCities)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), 80, 43, True, True)
+                                
+
+                                        # extra cottage growth for target city's vicinity
+                                        #for (i, j) in utils.surroundingPlots((x, y), 2):
+                                        #        pCurrent = gc.getMap().plot(i, j)
+                                        #        if pCurrent.getWorkingCity() == targetCity:
+                                        #                pCurrent.changeUpgradeProgress(utils.getTurns(10))
+                                                
+                                        # migration brings culture
+                                        x = targetCity.getX()
+                                        y = targetCity.getY()
+                                        sx = sourceCity.getX()
+                                        sy = sourceCity.getY()
+                                        targetPlot = gc.getMap().plot(x, y)
+                                        sourcePlot = gc.getMap().plot(sx, sy)
+                                        iTargetPlayer = targetCity.getOwner()
+                                        iSourcePlayer = sourceCity.getOwner()
+                                        iSourceCultureChange = sourcePlot.getCulture(iSourcePlayer) / sourceCity.getPopulation()
+                                        iTargetCultureChange = targetPlot.getCulture(iTargetPlayer) / targetCity.getPopulation()
+                                        iCultureChange = min(iSourceCultureChange, iTargetCultureChange) / 2
+                                        targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)
+                                        sourcePlot.changeCulture(iSourcePlayer, -iCultureChange, False)
+
+
+                                        # chance to spread state religion if in source city
+                                        if gc.getPlayer(iSourcePlayer).isStateReligion():
+                                                iReligion = gc.getPlayer(iSourcePlayer).getStateReligion()
+                                                if sourceCity.isHasReligion(iReligion) and not targetCity.isHasReligion(iReligion):
+                                                        iRandom = gc.getGame().getSorenRandNum(3, 'random religion spread')
+                                                        if iRandom == 0:
+                                                                targetCity.setHasReligion(iReligion, True, True, True)
+                                                        
+                                        # brain drain
+                                        iBrainDrain = math.floor(self.brainDrain(sourceCity, targetCity) / 10) + 1
+
+                                        sourceCity.changePopulation(-1)
+                                        targetCity.changePopulation(1)
+                                        if (iSourcePlayer != iTargetPlayer):
+                                                gc.getPlayer(iSourcePlayer).AI_changeAttitudeExtra(iTargetPlayer, -iBrainDrain)
+                                                gc.getPlayer(iTargetPlayer).AI_changeAttitudeExtra(iSourcePlayer, +iBrainDrain)
 		
-		#utils.debugTextPopup(str([(x.getName(), y) for (x,y) in lTargetCities]))
-		#utils.debugTextPopup("Target city: "+targetCity.getName())
-		#utils.debugTextPopup("Source city: "+sourceCity.getName())
-		
-		iNumMigrations = min(len(lSourceCities) / 4, len(lTargetCities))
-		
-		for iMigration in range(iNumMigrations):
-			sourceCity = lSourceCities[iMigration][0]
-			targetCity = lTargetCities[iMigration][0]
-		
-			sourceCity.changePopulation(-1)
-			targetCity.changePopulation(1)
-			
-			if sourceCity.getPopulation() >= 9:
-				sourceCity.changePopulation(-1)
-				targetCity.changePopulation(1)
-				
-			# extra cottage growth for target city's vicinity
-			x = targetCity.getX()
-			y = targetCity.getY()
-			for (i, j) in utils.surroundingPlots((x, y), 2):
-				pCurrent = gc.getMap().plot(i, j)
-				if pCurrent.getWorkingCity() == targetCity:
-					pCurrent.changeUpgradeProgress(utils.getTurns(10))
-						
-			# migration brings culture
-			targetPlot = gc.getMap().plot(x, y)
-			iTargetPlayer = targetCity.getOwner()
-			iSourcePlayer = sourceCity.getOwner()
-			iCultureChange = targetPlot.getCulture(iTargetPlayer) / targetCity.getPopulation()
-			targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)
-			
-			# chance to spread state religion if in source city
-			if gc.getPlayer(iSourcePlayer).isStateReligion():
-				iReligion = gc.getPlayer(iSourcePlayer).getStateReligion()
-				if sourceCity.isHasReligion(iReligion) and not targetCity.isHasReligion(iReligion):
-					iRandom = gc.getGame().getSorenRandNum(3, 'random religion spread')
-					if iRandom == 0:
-						targetCity.setHasReligion(iReligion, True, True, True)
-						
-			# notify affected players
-			if utils.getHumanID() == iSourcePlayer:
-				CyInterface().addMessage(iSourcePlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_EMIGRATION", (sourceCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), sourceCity.getX(), sourceCity.getY(), True, True)
-			elif utils.getHumanID() == iTargetPlayer:
-				CyInterface().addMessage(iTargetPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_IMMIGRATION", (targetCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), x, y, True, True)
-	
-			if iTargetPlayer == iCanada:
-				self.canadianUP(targetCity)
-		
-		
-	def canadianUP(self, city):
-		iPopulation = 5 * city.getPopulation() / 2
-		
-		lProgress = []
-		bAllZero = True
-		for iSpecialist in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]:
-			iProgress = city.getGreatPeopleUnitProgress(utils.getUniqueUnit(city.getOwner(), iSpecialist))
-			if iProgress > 0: bAllZero = False
-			lProgress.append(iProgress)
-			
-		if bAllZero:
-			iGreatPerson = utils.getRandomEntry([iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman])
-		else:
-			iGreatPerson = utils.getHighestIndex(lProgress) + iGreatProphet
-			
-		iGreatPerson = utils.getUniqueUnit(city.getOwner(), iGreatPerson)
-		
-		city.changeGreatPeopleProgress(iPopulation)
-		city.changeGreatPeopleUnitProgress(iGreatPerson, iPopulation)
-		
-		if utils.getHumanID() == city.getOwner():
-			CyInterface().addMessage(city.getOwner(), False, iDuration, CyTranslator().getText("TXT_KEY_UP_MULTICULTURALISM", (city.getName(), gc.getUnitInfo(iGreatPerson).getText(), iPopulation)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iGreatPerson).getButton(), ColorTypes(iGreen), city.getX(), city.getY(), True, True)
+	def brainDrain(self, sourceCity, city):
+                iAllProgress = sourceCity.getGreatPeopleProgress() / sourceCity.getPopulation()
+                        
+                if (iAllProgress <= 0): return 0
+                
+                lProgress = []
+                for iSpecialist in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]:
+                        iProgress = sourceCity.getGreatPeopleUnitProgress(utils.getUniqueUnit(sourceCity.getOwner(), iSpecialist))
+                        if iAllProgress > iProgress:
+                                lProgress.append(iSpecialist)
+                
+                if not lProgress: return 0
+                
+                iGreatPerson = utils.getRandomEntry(lProgress)
+                sourceCity.changeGreatPeopleProgress(-iAllProgress)
+                sourceCity.changeGreatPeopleUnitProgress(iGreatPerson, -iAllProgress)
+
+                iGreatPerson = utils.getUniqueUnit(city.getOwner(), iGreatPerson)
+                city.changeGreatPeopleProgress(iAllProgress)
+                city.changeGreatPeopleUnitProgress(iGreatPerson, iAllProgress)
+                                
+                if utils.getHumanID() == city.getOwner():
+                        CyInterface().addMessage(city.getOwner(), False, iDuration, CyTranslator().getText("TXT_KEY_UP_MULTICULTURALISM", (city.getName(), gc.getUnitInfo(iGreatPerson).getText(), iPopulation)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iGreatPerson).getButton(), ColorTypes(iGreen), city.getX(), city.getY(), True, True)
+                
+                return iAllProgress
 					
 	def selectRandomCitySourceCiv(self, iCiv): # Unused
 		if gc.getPlayer(iCiv).isAlive():
