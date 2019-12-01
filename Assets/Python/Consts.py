@@ -1043,7 +1043,7 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 125
+iNumLeaders = 127
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
@@ -1056,7 +1056,7 @@ iShahuji, iNaresuan, iAlpArslan, iBaibars, iNasser, iAlfred, iTrudeau, iChandrag
 iRahman, iRajendra, iLobsangGyatso, iSobieski, iVatavelli, iMbemba, iHarun, iSongtsen, iCasimir, iYaqub, 
 iLorenzo, iSantaAnna, iJuarez, iCardenas, iPedro, iSanMartin, iPeron, iBolivar, iAhoeitu, iKrishnaDevaRaya, 
 iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDonald, iCastilla, iWilliam,
-iGeorge, iKhosrow, iBumin, iTamerlane, iEzana) = range(iNumLeaders)
+iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iPhilipAugustus, iAbdulaziz) = range(iNumLeaders)
 
 resurrectionLeaders = {
 	iChina : iHongwu,
@@ -1098,4 +1098,113 @@ lReligionMapTexts = ["TXT_KEY_CULTURELEVEL_NONE", "TXT_KEY_WB_RELIGIONMAP_MINORI
 
 lNetworkEvents = {
 	"CHANGE_COMMERCE_PERCENT" :	1200,
+}
+
+
+# citis: polities
+iNumPolities = 180
+(iPolityOldEgypt, iPolityMiddleEgypt, iPolityNewEgypt, iPolityFatimids, iPolityMamluks, iPolityAyyubids, iPolityEgypt, #7
+iPolityZhou, iPolityQin, iPolityHan, iPolityJin, iPolityTang, iPolitySong, iPolityMing, iPolityQing, iPolityChina, #9
+iPolityAkkadia, iPolityAssyria, iPolityBabylonia, iPolityNeoAssyria, iPolityNeoBabylonia, iPolityIraq, #6
+iPolityHVC, iPolityDelhi, iPolityMughals, iPolityPakistan, #4
+iPolityMyceneans, iPolityGreece, iPolityMacedonia, iPolityEasternRome, iPolityByzantium, iPolityNicaea, #6
+iPolityMagadha, iPolityNanda, iPolityMaurya, iPolityGupta, iPolityPala, iPolityMaratha, iPolityIndia, #7
+iPolityPhoenicia, iPolityCarthage, iPolityAfrica, iPolityTunis, iPolityLebanon, #5
+iPolityTonga, iPolityHawaii, iPolitySamoa, iPolityNiue, iPolityPolynesia, #5
+iPolityMedia, iPolityAchaemenids, iPolityParthia, iPolitySassanids, iPolitySafavids, iPolityAsharids, iPolityQajars, iPolityPahlavis, iPolityIran, #9
+iPolityRome, iPolityWesternRome, iPolityVenice, iPolityItaly, #4
+iPolityChola, iPolityBahmani, iPolityVijayanagar, iPolityMysore, iPolityTamil, #5
+iPolityAksum, iPolityAdal, iPolityEthiopia, #3
+iPolitySamhan, iPolityGoguryeo, iPolityGojoseon, iPolityGoryeo, iPolityJoseon, iPolityKorea, #6
+iPolityMaya, iPolityYucatan, iPolityNewGranada, iPolityColombia, iPolitySouthAmerica, #5
+iPolityHeian, iPolityKamakura, iPolityAshikaga, iPolityOda, iPolityTokugawa, iPolityJapan, #4
+iPolityVikings, iPolityKalmarUnion, iPolityNorthSea, iPolityDenmark, iPolityNorway, iPolitySweden, iPolityDenmarkNorway, #6
+iPolityRashiduns, iPolityAbbasids, iPolityUmmayads, iPolityDiriyah, iPolityNedj, iPolitySaudis, iPolityArabLeague, #5
+iPolityTibet, #1
+iPolitySrivijaya, iPolityMelayu, iPolityMajapahit, iPolityMataram, iPolityIndonesia, #4
+iPolityCordoba, iPolityAndalus, iPolityAlmohads, iPolityMorocco, #4
+iPolityCastile, iPolityAragon, iPolitySpain, iPolityIberia, #4
+iPolityFrancia, iPolityBurgundy, iPolityFrance, iPolityFrenchCommune, #4
+iPolityKhmer, iNanazhao, iPolityCambodia, iPolityVietnam, iPolityBurma, #5
+iPolityEngland, iPolityAngevins, iPolityBritain, iPolityScotland, iPolityUK, #5
+iPolityGermany, iPolityHRE, iPolityHabsburgs, iPolityPrussia, iPolityHungary, iPolityAustria, iPolityAustriaHungary, iPolityThirdReich, #8
+iPolityKiev, iPolityNogorod, iPolityMuscovy, iPolityRussia, iPolitySovietUnion, #5
+iPolityMali, iPolitySonghai, #2
+iPolityKrakow, iPolityPoland, iPolityLithuania, iPolityPolandLithuania, iPolityIntermarium, #5
+iPolityPortugal, iPolityPortugalicia, #2
+iPolityInca, iPolityPeru, iPolityBolivia, #3
+iPolityMongolia, iPolityTimurids, iPolityGoldenHorde, iPolityIlkhanate, iPolityYuan, iPolityChagatai, #6
+iPolityAztecs, iPolityMexico, #2
+iPolitySeljucs, iPolityOttomans, iPolityTurkey, #3
+iPolityAyutthaya, iPolityThailand, iPolitySiam, #3
+iPolityCongo, iPolityZaire, #2
+iPolityNetherlands, iPolityBelgium, #2
+iPolityUSA, iPolityCSA, iPolityUSSA, iPolityNWO, #4
+iPolityPlata, iPolityArgentina, #2
+iPolityBrazil, #1
+iPolityCanada) = range(iNumPolities) #1
+
+iNumNameTypes = 6
+(iTypeDynastic, iTypeCapital, iTypeNational, iTypeNationalAdjective, iTypeNationalShort, iTypeRegionalOrganisation) = range(iNumNameTypes)
+#Dynastic: named after dynasty, affects only title, prefers adjective case
+#Capital: named after capital, prefers of case
+#National: named after nation
+#National Adjective: named after nation, prefers adjective case
+#National Short: named after nation, prefers of case
+
+iNumPolityFields = 7
+(iFieldAdjective, iFieldName, iFieldTitle, iFieldNameType, iFieldCapitalLocation, iFieldLeader, iFieldCore) = range(iNumPolityFields)
+dPolities = {
+	#France:
+	iPolityFrancia : ["TXT_KEY_CIV_FRANCE_FRANKISH", "TXT_KEY_CIV_FRANCE_FRANCIA", -1, iTypeNationalAdjective, -1, iCharlemagne, {"tRectangle" : ((55, 49), (59, 53)), 'lExceptions' : []}],
+	iPolityBurgundy : ["TXT_KEY_CIV_FRANCE_BURGUNDIAN", "TXT_KEY_CIV_FRANCE_BURGUNDY", -1, iTypeNational, (56, 47), -1, {'tRectangle' : ((55, 46), (57, 49)), 'lExceptions' : []}],
+	iPolityFrance : ["TXT_KEY_CIV_FRANCE_ADJECTIVE", "TXT_KEY_CIV_FRANCE_SHORT_DESC", -1, iTypeNational, (55, 50), iPhilipAugustus, {'tRectangle' : ((51, 46), (57, 51)), 'lExceptions' : [(51, 46), (52, 46), (55, 46), (57, 46)]}],
+	iPolityFrenchCommune : [-1, -1, "TXT_KEY_CIV_FRANCE_COMMUNE", iTypeCapital, -1, -1, {'tRectangle' : ((54, 49), (56, 51)), 'lExceptions' : []}],
+
+	#Arabia:
+	iPolityRashiduns: ["TXT_KEY_CIV_ARABIA_RASHIDUN", -1, -1, iTypeDynastic, (75, 33), iHarun, {'tRectangle' : ((73, 32), (76, 36)), 'lExceptions' : []}],
+	iPolityUmmayads: ["TXT_KEY_CIV_ARABIA_UMMAYAD", -1, -1, iTypeDynastic, (74, 41), -1, {'tRectangle' : ((72, 37), (78, 42)), 'lExceptions' : []}],
+	iPolityAbbasids: ["TXT_KEY_CIV_ARABIA_ABBASID", -1, -1, iTypeDynastic, (76, 40), iSaladin, {'tRectangle' : ((72, 37), (78, 42)), 'lExceptions' : []}],
+	iPolityDiriyah : ["TXT_KEY_CIV_ARABIA_NEDJ", "TXT_KEY_CIV_ARABIA_NEDJ", -1, iTypeCapital, (77, 34), iAbdulaziz, {'tRectangle' : ((75, 33), (77, 37)), 'lExceptions' : [(75, 33), (75, 34), (77, 37)]}],
+	iPolityNedj : ["TXT_KEY_CIV_ARABIA_NEDJ", "TXT_KEY_CIV_ARABIA_NEDJ", -1, iTypeNational, (77, 34), iAbdulaziz, {'tRectangle' : ((75, 33), (77, 37)), 'lExceptions' : [(75, 33), (75, 34), (77, 37)]}],
+	iPolitySaudis: ["TXT_KEY_CIV_ARABIA_SAUDI_ADJECTIVE", -1, -1, iTypeDynastic, (77, 34), iAbdulaziz, {'tRectangle' : ((75, 33), (77, 37)), 'lExceptions' : [(75, 33), (75, 34), (77, 37)]}],
+	iPolityArabLeague: [-1, -1, "TXT_KEY_CIV_ARABIA_REPUBLIC", iTypeRegionalOrganisation, (77, 35), -1, {'tRectangle' : ((72, 30), (82, 37)), 'lExceptions' : [(72, 30), (72, 31), (72, 32), (73, 30), (82, 37)]}],
+	
+	#Tibet:
+	iPolityTibet : ["TXT_KEY_CIV_TIBET_ADJECTIVE", "TXT_KEY_CIV_TIBET_SHORT_DESC", -1, iTypeNational, (96, 43), iSongtsen, {'tRectangle' : ((92, 41), (98, 45)), 'lExceptions' : [(92, 41)]}],
+	
+	#Indonesia:
+	iPolitySrivijaya : ["TXT_KEY_CIV_INDONESIA_SRIVIJAYA_ADJECTIVE", "TXT_KEY_CIV_INDONESIA_SRIVIJAYA", -1, iTypeNationalShort, (100, 26), iDharmasetu, {'tRectangle' : ((98, 26), (101, 30)), 'lExceptions' : [(100, 30), (101, 29), (101, 30)]}],
+	iPolityMelayu : ["TXT_KEY_CIV_INDONESIA_MELAYU_ADJECTIVE", -1, -1, iTypeDynastic, (100, 26), -1, {'tRectangle' : ((98, 26), (101, 30)), 'lExceptions' : [(100, 30), (101, 29), (101, 30)]}],
+	iPolityMajapahit : ["TXT_KEY_CIV_INDONESIA_MAJAPAHIT_ADJECTIVE", "TXT_KEY_CIV_INDONESIA_MAJAPAHIT", -1, iTypeNationalShort, (106, 25), iHayamWuruk, {'tRectangle' : ((103, 24), (107, 25)), 'lExceptions' : []}],
+	iPolityMataram : ["TXT_KEY_CIV_INDONESIA_MATARAM", "TXT_KEY_CIV_INDONESIA_MATARAM", -1, iTypeCapital, -1, -1, {'tRectangle' : ((103, 24), (107, 25)), 'lExceptions' : []}],
+	iPolityIndonesia : ["TXT_KEY_CIV_INDONESIA_ADJECTIVE", "TXT_KEY_CIV_INDONESIA_SHORT_DESC", -1, iTypeNational,(104, 25), iSuharto, {'tRectangle' : ((98, 24), (107, 30)), 'lExceptions' : [(100, 30), (101, 29), (101, 30), (104, 27), (104, 28), (105, 27), (105, 28), (105, 29), (106, 27), (106, 28), (106, 29), (106, 30)]}],
+	
+	
+	#Italy:
+	iPolityVenice : ["TXT_KEY_CIV_ITALY_VENICE_ADJECTIVE", -1, -1, iTypeCapital, (61, 47), iLorenzo, {"tRectangle" : ((61, 46), (62, 47)), 'lExceptions' : []}],
+	iPolityItaly : ["TXT_KEY_CIV_ITALY_ADJECTIVE", "TXT_KEY_CIV_ITALY_SHORT_DESC", -1, iTypeNational, (60, 44), iCavour, {"tRectangle" : ((58, 40), (63, 47)), 'lExceptions' : [(62, 47), (63, 46), (63, 47)]}],
+	
+	#Vikings:
+	iPolityVikings : ["TXT_KEY_CIV_VIKING_ADJECTIVE", -1, -1, iTypeNationalAdjective, (60, 56), -1, {"tRectangle" : ((58, 55), (62, 59)), 'lExceptions' : []}],
+	iPolityNorthSea : ["TXT_KEY_CIV_NORTH_SEA", -1, -1, iTypeDynastic, (60, 56), iRagnar, {"tRectangle" : ((58, 55), (62, 59)), 'lExceptions' : []}],
+	iPolityKalmarUnion : [-1, -1, "TXT_KEY_CIV_VIKING_UNION", iTypeCapital, (63, 57), -1, {"tRectangle" : ((60, 56), (63, 59)), 'lExceptions' : []}],
+	iPolityDenmark : ["TXT_KEY_CIV_DENMARK_ADJECTIVE", "TXT_KEY_CIV_DENMARK_SHORT_DESC", -1, iTypeNational, (60, 56), -1, {"tRectangle" : ((59, 55), (60, 57)), 'lExceptions' : []}],
+	iPolityNorway : ["TXT_KEY_CIV_NORWAY_ADJECTIVE", "TXT_KEY_CIV_NORWAY_SHORT_DESC", -1, iTypeNational, (60, 59), iGerhardsen, {"tRectangle" : ((58, 59), (61, 60)), 'lExceptions' : []}],
+	iPolitySweden : ["TXT_KEY_CIV_SWEDEN_ADJECTIVE", "TXT_KEY_CIV_SWEDEN_SHORT_DESC", -1, iTypeNational, (63, 59), iGustav, {"tRectangle" : ((61, 57), (63, 60)), 'lExceptions' : []}],
+	iPolityDenmarkNorway : ["TXT_KEY_CIV_DENMARK_NORWAY_ADJECTIVE", "TXT_KEY_CIV_VIKINGS_DENMARK_NORWAY", -1, iTypeNational, (60, 56), -1, {"tRectangle" : ((59, 55), (60, 59)), 'lExceptions' : []}],
+	
+	#Japan:
+	iPolityHeian : [-1, -1, -1, iTypeCapital, (113, 45), iKammu, {'tRectangle' : ((112, 45), (114, 46)), 'lExceptions' : []}],
+	iPolityKamakura : ["TXT_KEY_CIV_JAPAN_KAMAKURA", -1, -1, iTypeDynastic, (113, 45), iOdaNobunaga, {'tRectangle' : ((112, 44), (114, 46)), 'lExceptions' : []}],
+	iPolityAshikaga : ["TXT_KEY_CIV_JAPAN_ASHIKAGA", -1, -1, iTypeDynastic, (113, 45), iOdaNobunaga, {'tRectangle' : ((112, 44), (114, 46)), 'lExceptions' : []}],
+	iPolityOda : ["TXT_KEY_CIV_JAPAN_ODA", -1, "TXT_KEY_CIV_JAPAN_CLAN", iTypeDynastic, (116, 46), iOdaNobunaga, {'tRectangle' : ((115, 45), (117, 46)), 'lExceptions' : []}],
+	iPolityTokugawa : ["TXT_KEY_CIV_JAPAN_TOKUGAWA", -1, "TXT_KEY_CIV_JAPAN_DEFAULT", iTypeDynastic, (116, 46), iOdaNobunaga, {'tRectangle' : ((115, 45), (116, 47)), 'lExceptions' : []}],
+	iPolityJapan : ["TXT_KEY_CIV_JAPAN_ADJECTIVE", "TXT_KEY_CIV_JAPAN_SHORT", -1, iTypeNational, (116, 46), iMeiji, {'tRectangle' : ((111, 41), (116, 52)), 'lExceptions' : [(111, 51), (111, 52), (112, 52)]}],
+	
+	#Moors:
+	iPolityCordoba : [-1, -1, -1, iTypeCapital, (51, 41), iRahman, {'tRectangle' : ((50, 40), (52, 42)), 'lExceptions' : []}],
+	iPolityAndalus : ["TXT_KEY_CIV_ANDALUSIAN", "TXT_KEY_CIV_ANDALUS", "TXT_KEY_CIV_MOORS_TAIFAS", iTypeNational, (51, 41), -1, {'tRectangle' : ((50, 40), (52, 42)), 'lExceptions' : []}],
+	iPolityAlmohads : ["TXT_KEY_CIV_MOORS_ALMOHAD", -1, -1, iTypeDynastic, (51, 37), iYaqub, {'tRectangle' : ((48, 34), (54, 39)), 'lExceptions' : []}],
+	iPolityMorocco : ["TXT_KEY_CIV_MOROCCO_ADJECTIVE", "TXT_KEY_CIV_MOROCCO_SHORT_DESC", -1, iTypeNational, (51, 37), iYaqub, {'tRectangle' : ((50, 36), (51, 38)), 'lExceptions' : []}]
 }
